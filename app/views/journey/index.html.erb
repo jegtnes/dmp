@@ -1,2 +1,20 @@
 <h1>Oh hai!</h1>
 
+<table>
+  <tr>
+    <th>Departure</th>
+    <th>Arrival</th>
+    <th>Duration</th>
+    <th>Changes</th>
+    <th>Price</th>
+  </tr>
+  <% @journeys.each do |journey| %>
+    <tr>
+      <td><%= journey['dep'] %></td>
+      <td><%= journey['arr'] %></td>
+      <td><%= journey['dur'] %></td>
+      <td><%= journey['chg'] %></td>
+      <td><%= journey['fare'] %></td>
+    </tr>
+  <% end %>
+</table>
