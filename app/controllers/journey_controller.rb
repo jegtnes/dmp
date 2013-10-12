@@ -10,7 +10,7 @@ class JourneyController < ApplicationController
         'arr' => i.at_css('.arr').text,
         'dur' => i.at_css('.dur').text,
         'chg' => i.at_css('.chg').text,
-        'fare' => i.at_css('.fare').text,
+        'fare' => i.at_css('.opsingle').text,
          }
       end
   end
