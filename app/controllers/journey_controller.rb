@@ -3,7 +3,14 @@ class JourneyController < ApplicationController
   require 'open-uri'
 
   def index
-    url = "http://ojp.nationalrail.co.uk/service/timesandfares/THS/LDR/141013/0630/dep"
+
+    url = "http://ojp.nationalrail.co.uk/service/timesandfares/"
+    url << params[:dep] + '/'
+    url << params[:arr] + '/'
+    url << params[:date]["day"] << params[:date]["month"] << params[:date][:year] + '/'
+    url << params[:time]["hour"] << params[:time]["minute"]
+    url << '/dep'
+
     doc = Nokogiri::HTML(open(url))
     @journeys = doc.css('.mtx').map do |i|
       { 'dep' => i.at_css('.dep').text,

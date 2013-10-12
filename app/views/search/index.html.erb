@@ -1,0 +1,13 @@
+<h1>Search for trains, yo.</h1>
+
+<%= form_tag("/journey", method: "get") do %>
+  <%= label_tag(:dep, "Departure: ") %>
+  <%= text_field_tag(:dep) %>
+  <%= label_tag(:arr, "Arrival: ") %>
+  <%= text_field_tag(:arr) %>
+  <%= label_tag(:date, "Date: ") %>
+  <%= select_date Date.today, prefix: :date %>
+  <%= label_tag(:time, "Time: ") %>
+  <%= select_time(Time.now, prefix: :time) %>
+  <%= submit_tag("Search") %>
+<% end %>

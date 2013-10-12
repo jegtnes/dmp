@@ -1,6 +1,6 @@
 Dmp::Application.routes.draw do
 
-  resources :journeys
+  resources :journey
 
-  root to: 'journey#index'
+  root to: 'search#index'
 end
