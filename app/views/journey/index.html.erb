@@ -8,13 +8,7 @@
     <th>Changes</th>
     <th>Price</th>
   </tr>
-  <% @journeys.each do |journey| %>
-    <tr>
-      <td><%= journey['dep'] %></td>
-      <td><%= journey['arr'] %></td>
-      <td><%= journey['dur'] %></td>
-      <td><%= journey['chg'] %></td>
-      <td><%= journey['fare'] %></td>
-    </tr>
-  <% end %>
 </table>
+
+  <% jason =`/usr/local/bin/casperjs ../dmp-scraper/casper.js BRI BPW 041213 0300` %>
+  <%= jason %>
