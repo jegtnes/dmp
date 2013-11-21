@@ -8,6 +8,6 @@
   <%= label_tag(:date, "Date: ") %>
   <%= date_field_tag :date, Date.today %>
   <%= label_tag(:time, "Time: ") %>
-  <%= time_field_tag :time, Time.now.hour.to_s + Time.now.min.to_s %>
+  <%= time_field_tag :time, Time.now.hour.to_s.rjust(2, 0) + Time.now.min.to_s.rjust(2, 0) %>
   <%= submit_tag("Search") %>
 <% end %>
