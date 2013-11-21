@@ -1,6 +1,8 @@
 class JourneyController < ApplicationController
   def index
-    journey_scraper = JourneyScraper.new('BRI', 'BPW', '121213', '1000')
+    date = params[:date][:day] + params[:date][:month] + params[:date][:year]
+    time = params[:time][:hour] + params[:time][:minute]
+    journey_scraper = JourneyScraper.new(params[:dep], params[:arr], date, time)
     @journeys = JSON.parse journey_scraper.call
   end
 end
