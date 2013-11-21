@@ -6,8 +6,8 @@
   <%= label_tag(:arr, "Arrival: ") %>
   <%= text_field_tag(:arr) %>
   <%= label_tag(:date, "Date: ") %>
-  <%= select_date Date.today, prefix: :date %>
+  <%= date_field_tag :date, Date.today %>
   <%= label_tag(:time, "Time: ") %>
-  <%= select_time(Time.now, prefix: :time) %>
+  <%= time_field_tag :time, Time.now.hour.to_s + Time.now.min.to_s %>
   <%= submit_tag("Search") %>
 <% end %>
