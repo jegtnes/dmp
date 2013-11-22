@@ -29,6 +29,12 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development do
+  gem 'guard'
+  gem 'guard-livereload', require: false
+  gem "rack-livereload"
+end
+
 gem 'polar-express'
 
 # Use ActiveModel has_secure_password
