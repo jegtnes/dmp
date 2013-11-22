@@ -3,17 +3,25 @@
   <h2>A different way to plan your British train journeys</h2>
 </div>
 
-<div class="">
 <%= form_tag("/journey", method: "get", class: '') do %>
-  <%= label_tag(:dep, "Departure: ") %>
-  <%= text_field_tag(:dep) %>
-  <%= label_tag(:arr, "Arrival: ") %>
-  <%= text_field_tag(:arr) %>
-  <%= label_tag(:date, "Date: ") %>
-  <%= date_field_tag :date, Date.today %>
-  <%= label_tag(:time, "Time: ") %>
-  <%= time_field_tag :time, Time.now.hour.to_s.rjust(2, '0') +
-  Time.now.min.to_s.rjust(2, '0') %>
+  <ol class="grid list--semantic">
+    <li class="grid__item one-half">
+      <%= label_tag(:dep, "Departure: ") %>
+      <%= text_field_tag(:dep) %>
+    </li><!--
+    --><li class="grid__item one-half">
+      <%= label_tag(:arr, "Arrival: ") %>
+      <%= text_field_tag(:arr) %>
+    </li><!--
+    --><li class="grid__item one-half">
+      <%= label_tag(:date, "Date: ") %>
+      <%= date_field_tag :date, Date.today %>
+    </li><!--
+    --><li class="grid__item one-half">
+      <%= label_tag(:time, "Time: ") %>
+      <%= time_field_tag :time, Time.now.hour.to_s.rjust(2, '0') +
+      Time.now.min.to_s.rjust(2, '0') %>
+    </li>
+  </ol>
   <%= submit_tag("Search") %>
 <% end %>
-</div>
