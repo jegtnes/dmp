@@ -3,32 +3,30 @@
   <h2>A different way to plan your British train journeys</h2>
 </div>
 
-<%= form_tag("/journey", method: "get", class: '') do %>
-  <ol class="grid form-fields">
-    <li class="grid__item one-half">
-      <label for="dep">
-        From:
-        <%= text_field_tag(:dep) %>
-      </label>
-    </li><!--
-    --><li class="grid__item one-half">
-      <label for="arr">
-        To:
-        <%= text_field_tag(:arr) %>
-      </label>
-    </li><!--
-    --><li class="grid__item one-half">
-      <label for="date">
-        Date:
-        <%= date_field_tag :date, Date.today %>
-      </label>
-    </li><!--
-    --><li class="grid__item one-half">
-      <label for="time">Time:
-        <%= time_field_tag :time, Time.now.hour.to_s.rjust(2, '0') +
-        Time.now.min.to_s.rjust(2, '0') %>
-      </label>
-    </li>
-  </ol>
-  <%= submit_tag("Search") %>
+<%= form_tag("/journey", method: "get", class: 'grid form-fields form--search') do %>
+  <fieldset class="grid__item one-half">
+    <label for="dep">
+      From:
+      <%= text_field_tag(:dep) %>
+    </label>
+
+    <label for="arr">
+      To:
+      <%= text_field_tag(:arr) %>
+    </label>
+  </fieldset><!--
+  --><fieldset class="grid__item one-half">
+    <label for="date">
+      Date:
+      <%= date_field_tag :date, Date.today %>
+    </label>
+
+    <label for="time">Time:
+      <%= time_field_tag :time, Time.now.hour.to_s.rjust(2, '0') +
+      Time.now.min.to_s.rjust(2, '0') %>
+    </label>
+  </fieldset>
+  <div class="grid__item one-whole">
+    <%= submit_tag("Search") %>
+  </div>
 <% end %>
