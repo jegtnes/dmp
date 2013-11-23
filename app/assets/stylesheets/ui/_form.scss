@@ -1,12 +1,17 @@
 .form--search {
-	> li {
-		text-align: right;
-//		width: 200px;
-//		display: inline-block;
-	}
-
-	input {
+	input, label {
 		font-size: 24px;
 		padding: 12px;
+	}
+
+	fieldset {
+		border: none;
+		&:nth-of-type(0) {
+			text-align: left;
+		}
+
+		&:nth-of-type(1) {
+			text-align: right;
+		}
 	}
 }
