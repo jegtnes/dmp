@@ -37,6 +37,8 @@ end
 
 gem 'polar-express'
 
+gem 'twitter-typeahead-rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
