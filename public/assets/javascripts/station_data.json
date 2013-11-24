@@ -1,5 +1,138 @@
 [
 	{
+		"code": "London",
+		"name": "London (all stations)"
+	},
+	{
+		"code": "Bristol",
+		"name": "Bristol (all stations)"
+	},
+	{
+		"code": "Birmingham",
+		"name": "Birmingham (all stations)"
+	},
+	{
+		"code": "Reading",
+		"name": "Reading (all stations)"
+	},
+	{
+		"code": "Glasgow",
+		"name": "Glasgow (all stations)"
+	},
+	{
+		"code": "Manchester",
+		"name": "Manchester (all stations)"
+	},
+	{
+		"code": "Dorking",
+		"name": "Dorking (all stations)"
+	},
+	{
+		"code": "Acton",
+		"name": "Acton (all stations)"
+	},
+	{
+		"code": "Ardrossan",
+		"name": "Ardrossan (all stations)"
+	},
+	{
+		"code": "Southampton",
+		"name": "Southampton (all stations)"
+	},
+
+	{
+		"code": "Portsmouth",
+		"name": "Portsmouth (all stations)"
+	},
+	{
+		"code": "Cardiff",
+		"name": "Cardiff (all stations)"
+	},
+	{
+		"code": "Liverpool",
+		"name": "Liverpool (all stations)"
+	},
+	{
+		"code": "Walthamstow",
+		"name": "Walthamstow (all stations)"
+	},
+	{
+		"code": "Wembley",
+		"name": "Wembley (all stations)"
+	},
+	{
+		"code": "Hackney",
+		"name": "Hackney (all stations)"
+	},
+	{
+		"code": "Southend",
+		"name": "Southend (all stations)"
+	},
+	{
+		"code": "Windsor",
+		"name": "Windsor (all stations)"
+	},
+	{
+		"code": "Exeter",
+		"name": "Exeter (all stations)"
+	},
+	{
+		"code": "Warrington",
+		"name": "Warrington (all stations)"
+	},
+	{
+		"code": "Helensburgh",
+		"name": "Helensburgh (all stations)"
+	},
+	{
+		"code": "Birkenhead",
+		"name": "Birkenhead (all stations)"
+	},
+	{
+		"code": "Burnley",
+		"name": "Burnley (all stations)"
+	},
+	{
+		"code": "Coatbridge",
+		"name": "Coatbridge (all stations)"
+	},
+	{
+		"code": "Dumbarton",
+		"name": "Dumbarton (all stations)"
+	},
+	{
+		"code": "Folkestone",
+		"name": "Folkestone (all stations)"
+	},
+	{
+		"code": "Gainsborough",
+		"name": "Gainsborough (all stations)"
+	},
+	{
+		"code": "Greenock",
+		"name": "Greenock (all stations)"
+	},
+	{
+		"code": "Hamilton",
+		"name": "Hamilton (all stations)"
+	},
+	{
+		"code": "Wrexham",
+		"name": "Wrexham (all stations)"
+	},
+	{
+		"code": "Hyde",
+		"name": "Hyde (all stations)"
+	},
+	{
+		"code": "NewMills",
+		"name": "New Mills (all stations)"
+	},
+	{
+		"code": "StHelens",
+		"name": "St Helens (all stations)"
+	},
+	{
 		"code": "WAT",
 		"name": "London Waterloo",
 		"location": "SE1 8SW"
