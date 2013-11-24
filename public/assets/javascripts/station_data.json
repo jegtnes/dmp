@@ -189,7 +189,7 @@
 	},
 	{
 		"code": "STP",
-		"name": "London St.Pancras",
+		"name": "London St Pancras",
 		"location": "NW1 2QP"
 	},
 	{
@@ -394,7 +394,7 @@
 	},
 	{
 		"code": "SAC",
-		"name": "St.Albans City",
+		"name": "St Albans City",
 		"location": "AL1 5HE"
 	},
 	{
@@ -1109,7 +1109,7 @@
 	},
 	{
 		"code": "EXD",
-		"name": "Exeter St. David's",
+		"name": "Exeter St David's",
 		"location": "EX4 4NT"
 	},
 	{
@@ -1604,7 +1604,7 @@
 	},
 	{
 		"code": "SMG",
-		"name": "St.Margaret's (Greater London)",
+		"name": "St Margaret's (Greater London)",
 		"location": "TW1 2LH"
 	},
 	{
@@ -1739,7 +1739,7 @@
 	},
 	{
 		"code": "SMY",
-		"name": "St.Mary Cray",
+		"name": "St Mary Cray",
 		"location": "BR5 2PQ"
 	},
 	{
@@ -2259,7 +2259,7 @@
 	},
 	{
 		"code": "SNO",
-		"name": "St.Neots",
+		"name": "St Neots",
 		"location": "PE19 1QF"
 	},
 	{
@@ -3149,7 +3149,7 @@
 	},
 	{
 		"code": "SNH",
-		"name": "St.Helens Central",
+		"name": "St Helens Central",
 		"location": "WA10 1DQ"
 	},
 	{
@@ -3299,7 +3299,7 @@
 	},
 	{
 		"code": "SLQ",
-		"name": "St.Leonards Warrior Square",
+		"name": "St Leonards Warrior Square",
 		"location": "TN37 6HL"
 	},
 	{
@@ -3339,7 +3339,7 @@
 	},
 	{
 		"code": "SJS",
-		"name": "St.James' Street",
+		"name": "St James' Street",
 		"location": "E17 7PJ"
 	},
 	{
@@ -3364,7 +3364,7 @@
 	},
 	{
 		"code": "SAJ",
-		"name": "St.John's",
+		"name": "St John's",
 		"location": "SE8 4EW"
 	},
 	{
@@ -4209,12 +4209,12 @@
 	},
 	{
 		"code": "STM",
-		"name": "St.Michaels",
+		"name": "St Michaels",
 		"location": "L17 3TX"
 	},
 	{
 		"code": "BSE",
-		"name": "Bury St.Edmunds",
+		"name": "Bury St Edmunds",
 		"location": "IP32 6AD"
 	},
 	{
@@ -4434,7 +4434,7 @@
 	},
 	{
 		"code": "SAU",
-		"name": "St.Austell",
+		"name": "St Austell",
 		"location": "PL25 2LA"
 	},
 	{
@@ -5649,7 +5649,7 @@
 	},
 	{
 		"code": "SMT",
-		"name": "St.Margaret's (Hertfordshire)",
+		"name": "St Margaret's (Hertfordshire)",
 		"location": "SG12 8DS"
 	},
 	{
@@ -5914,7 +5914,7 @@
 	},
 	{
 		"code": "SIV",
-		"name": "St.Ives",
+		"name": "St Ives",
 		"location": "TR26 2BP"
 	},
 	{
@@ -5924,7 +5924,7 @@
 	},
 	{
 		"code": "SHJ",
-		"name": "St.Helens Junction",
+		"name": "St Helens Junction",
 		"location": "WA9 3LA"
 	},
 	{
@@ -6074,7 +6074,7 @@
 	},
 	{
 		"code": "RYR",
-		"name": "Ryde St.John's Road",
+		"name": "Ryde St John's Road",
 		"location": "PO33 2BA"
 	},
 	{
@@ -6129,7 +6129,7 @@
 	},
 	{
 		"code": "SDN",
-		"name": "St.Denys",
+		"name": "St Denys",
 		"location": "SO17 2EZ"
 	},
 	{
@@ -6734,7 +6734,7 @@
 	},
 	{
 		"code": "SAA",
-		"name": "St.Albans Abbey",
+		"name": "St Albans Abbey",
 		"location": "AL1 2DN"
 	},
 	{
@@ -7214,7 +7214,7 @@
 	},
 	{
 		"code": "SIH",
-		"name": "St.Helier",
+		"name": "St Helier",
 		"location": "SM4 5NR"
 	},
 	{
@@ -7714,7 +7714,7 @@
 	},
 	{
 		"code": "SAS",
-		"name": "St.Annes-On-The-Sea",
+		"name": "St Annes-On-The-Sea",
 		"location": "FY8 2JE"
 	},
 	{
@@ -7779,7 +7779,7 @@
 	},
 	{
 		"code": "SER",
-		"name": "St.Erth",
+		"name": "St Erth",
 		"location": "TR27 6JW"
 	},
 	{
@@ -7869,7 +7869,7 @@
 	},
 	{
 		"code": "EXT",
-		"name": "Exeter St. Thomas",
+		"name": "Exeter St Thomas",
 		"location": "EX4 1AJ"
 	},
 	{
@@ -9369,7 +9369,7 @@
 	},
 	{
 		"code": "SJP",
-		"name": "St.James' Park",
+		"name": "St James' Park",
 		"location": "EX4 6QB"
 	},
 	{
@@ -9554,7 +9554,7 @@
 	},
 	{
 		"code": "SBS",
-		"name": "St.Bees",
+		"name": "St Bees",
 		"location": "CA27 0BZ"
 	},
 	{
@@ -9784,7 +9784,7 @@
 	},
 	{
 		"code": "SGM",
-		"name": "St.Germans",
+		"name": "St Germans",
 		"location": "PL12 5LS"
 	},
 	{
@@ -9944,7 +9944,7 @@
 	},
 	{
 		"code": "PYJ",
-		"name": "Paisley St.James",
+		"name": "Paisley St James",
 		"location": "PA3 1RB"
 	},
 	{
@@ -11324,7 +11324,7 @@
 	},
 	{
 		"code": "BSJ",
-		"name": "Bedford St.Johns",
+		"name": "Bedford St Johns",
 		"location": "MK42 9BT"
 	},
 	{
@@ -11709,7 +11709,7 @@
 	},
 	{
 		"code": "SBV",
-		"name": "St.Budeaux Victoria Road",
+		"name": "St Budeaux Victoria Road",
 		"location": "PL5 1JJ"
 	},
 	{
@@ -11919,7 +11919,7 @@
 	},
 	{
 		"code": "SAR",
-		"name": "St.Andrew's Road",
+		"name": "St Andrew's Road",
 		"location": "BS11 9HS"
 	},
 	{
@@ -12114,7 +12114,7 @@
 	},
 	{
 		"code": "NTC",
-		"name": "Newton St.Cyres",
+		"name": "Newton St Cyres",
 		"location": "EX5 5AP"
 	},
 	{
@@ -12199,7 +12199,7 @@
 	},
 	{
 		"code": "SBF",
-		"name": "St.Budeaux Ferry Road",
+		"name": "St Budeaux Ferry Road",
 		"location": "PL5 1JJ"
 	},
 	{
@@ -12289,7 +12289,7 @@
 	},
 	{
 		"code": "SCR",
-		"name": "St.Columb Road",
+		"name": "St Columb Road",
 		"location": "TR9 6QY"
 	},
 	{
@@ -12479,7 +12479,7 @@
 	},
 	{
 		"code": "SKN",
-		"name": "St.Keyne",
+		"name": "St Keyne",
 		"location": "PL14 4SE"
 	},
 	{
