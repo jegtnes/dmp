@@ -1,42 +1,42 @@
 [
 	{
 		"code": "WAT",
-		"name": "Waterloo",
+		"name": "London Waterloo",
 		"location": "SE1 8SW"
 	},
 	{
 		"code": "VIC",
-		"name": "Victoria",
+		"name": "London Victoria",
 		"location": "SW1V 1JU"
 	},
 	{
 		"code": "LST",
-		"name": "Liverpool Street",
+		"name": "London Liverpool Street",
 		"location": "EC2M 7PY"
 	},
 	{
 		"code": "LBG",
-		"name": "London Bridge",
+		"name": "London London Bridge",
 		"location": "SE1 9SP"
 	},
 	{
 		"code": "CHX",
-		"name": "Charing Cross",
+		"name": "London Charing Cross",
 		"location": "WC2N 5HF"
 	},
 	{
 		"code": "EUS",
-		"name": "Euston",
+		"name": "London Euston",
 		"location": "NW1 2RT"
 	},
 	{
 		"code": "PAD",
-		"name": "Paddington",
+		"name": "London Paddington",
 		"location": "W2 1HQ"
 	},
 	{
 		"code": "KGX",
-		"name": "King's Cross",
+		"name": "London King's Cross",
 		"location": "N1 9AL"
 	},
 	{
@@ -56,7 +56,7 @@
 	},
 	{
 		"code": "STP",
-		"name": "St.Pancras",
+		"name": "London St.Pancras",
 		"location": "NW1 2QP"
 	},
 	{
@@ -66,7 +66,7 @@
 	},
 	{
 		"code": "CST",
-		"name": "Cannon Street",
+		"name": "London Cannon Street",
 		"location": "EC4N 6AP"
 	},
 	{
@@ -101,7 +101,7 @@
 	},
 	{
 		"code": "FST",
-		"name": "Fenchurch Street",
+		"name": "London Fenchurch Street",
 		"location": "EC3 4AJ"
 	},
 	{
@@ -126,7 +126,7 @@
 	},
 	{
 		"code": "MYB",
-		"name": "Marylebone",
+		"name": "London Marylebone",
 		"location": "NW1 6JJ"
 	},
 	{
@@ -136,7 +136,7 @@
 	},
 	{
 		"code": "BFR",
-		"name": "Blackfriars",
+		"name": "London Blackfriars",
 		"location": "EC4V 4DY"
 	},
 	{
@@ -231,7 +231,7 @@
 	},
 	{
 		"code": "WAE",
-		"name": "Waterloo (East)",
+		"name": "London Waterloo (East)",
 		"location": "SE1 8NH"
 	},
 	{
