@@ -1,7 +1,14 @@
 .form--search {
 	input, label {
 		font-size: 24px;
-		padding: 12px;
+		padding: 6px 0;
+		color: #fff;
+	}
+
+	input {
+		background-color: inherit;
+		border-width: 0 0 2px 0;
+		border-color: #fff;
 	}
 
 	fieldset {
