@@ -26,8 +26,6 @@
         <%= time_field_tag :time, @currentTimePadded, class: 'text-input' %>
       </label>
     </fieldset>
-    <div class="grid__item one-whole">
-      <%= submit_tag("Search", class: "btn btn--large btn--beta") %>
-    </div>
+      <%= button_tag "Search", type: :submit, class: "btn btn--beta btn--hollow btn--cta" %>
   <% end %>
 </div>
