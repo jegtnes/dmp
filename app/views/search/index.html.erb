@@ -8,26 +8,26 @@
     <fieldset class="grid__item one-half">
       <label for="dep">
         From:
-        <%= text_field_tag(:dep) %>
+        <%= text_field_tag(:dep, '', class: 'text-input') %>
       </label>
 
       <label for="arr">
         To:
-        <%= text_field_tag(:arr) %>
+        <%= text_field_tag(:arr, '', class: 'text-input') %>
       </label>
     </fieldset><!--
     --><fieldset class="grid__item one-half">
       <label for="date">
         Date:
-        <%= date_field_tag :date, Date.today %>
+        <%= date_field_tag :date, Date.today, class: 'text-input' %>
       </label>
 
       <label for="time">Time:
-        <%= time_field_tag :time, @currentTimePadded %>
+        <%= time_field_tag :time, @currentTimePadded, class: 'text-input' %>
       </label>
     </fieldset>
     <div class="grid__item one-whole">
-      <%= submit_tag("Search") %>
+      <%= submit_tag("Search", class: "btn btn--large btn--beta") %>
     </div>
   <% end %>
 </div>
