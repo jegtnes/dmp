@@ -23,8 +23,7 @@
       </label>
 
       <label for="time">Time:
-        <%= time_field_tag :time, Time.now.hour.to_s.rjust(2, '0') +
-        Time.now.min.to_s.rjust(2, '0') %>
+        <%= time_field_tag :time, @currentTimePadded %>
       </label>
     </fieldset>
     <div class="grid__item one-whole">
