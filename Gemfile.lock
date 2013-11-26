@@ -150,13 +150,14 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
-  guard
+  guard (>= 2.2.2)
   guard-livereload
   jbuilder (~> 1.2)
   jquery-rails
   polar-express
   rack-livereload
   rails (= 4.0.0)
+  rb-fsevent
   sass-rails (~> 4.0.0)
   sdoc
   sqlite3
