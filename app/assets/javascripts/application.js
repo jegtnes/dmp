@@ -13,4 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require typeahead
+//= require kalendae
 //= require_tree .
