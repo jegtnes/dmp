@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require hogan
 //= require typeahead
 //= require picker
 //= require picker.date
