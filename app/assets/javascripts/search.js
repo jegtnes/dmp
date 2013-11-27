@@ -13,5 +13,7 @@ $(document).ready(function() {
       ttl: 0
     }
   });
-  $('#date').kalendae();
+  $('#date').kalendae({
+    format: "DD/MM/YYYY"
+  });
 });
