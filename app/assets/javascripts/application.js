@@ -12,8 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require kalendae
 //= require typeahead
 //= require picker
+//= require picker.date
 //= require picker.time
 //= require_tree .
