@@ -13,6 +13,8 @@ $(document).ready(function() {
       ttl: 0
     }
   });
-  $('#date').pickadate();
+  $('#date').pickadate({
+    format: 'dd/mm/yyyy'
+  });
   $('#time').pickatime();
 });
