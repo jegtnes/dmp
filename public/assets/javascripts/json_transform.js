@@ -10,14 +10,14 @@ for(var i = 0; i < trains.length; i++) {
 	stationData.push(
 		{
 			tokens: tks,
-			value: trains[i].name
+			value: trains[i].name,
+			code: code
 		}
 	);
 }
 
 stations = JSON.stringify(stationData);
 
-console.log(trains);
 fs.writeFile("public/assets/javascripts/rail_stations.json", stations, function(err) {
     if(err) {
         console.log(err);
