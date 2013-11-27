@@ -16,4 +16,5 @@ $(document).ready(function() {
   $('#date').kalendae({
     format: "DD/MM/YYYY"
   });
+  $('#time').pickatime()
 });
