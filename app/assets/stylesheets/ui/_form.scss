@@ -1,5 +1,6 @@
 .form--search {
-	.text-input, label {
+	.text-input,
+	label {
 		font-size: 1.5rem;
 		padding: .375rem;
 		color: #fff;
@@ -7,12 +8,12 @@
 
 	.text-input {
 		background-color: inherit;
-		border-width: .0625rem .0625rem 0.125rem .0625rem;
-		border-color: transparent transparent #fff transparent;
+		border-width: .0625rem .0625rem .125rem;
+		border-color: transparent transparent #fff;
 	}
 
 	fieldset {
-		border: none;
+		border: 0;
 		&:nth-of-type(0) {
 			text-align: left;
 		}
