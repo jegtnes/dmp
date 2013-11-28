@@ -17,4 +17,12 @@ $(document).ready(function() {
     format: 'dd/mm/yyyy'
   });
   $('#time').pickatime();
+
+  $('#dep').bind('typeahead:selected', function(obj, datum, name) {
+    document.getElementById('dep-hidden').value = datum.code;
+  });
+
+  $('#arr').bind('typeahead:selected', function(obj, datum, name) {
+    document.getElementById('arr-hidden').value = datum.code;
+  });
 });

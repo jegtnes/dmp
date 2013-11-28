@@ -9,11 +9,13 @@
       <label for="dep">
         From:
         <%= text_field_tag(:dep, '', class: 'text-input text-input--wide') %>
+        <%= hidden_field_tag 'dep-hidden' %>
       </label>
 
       <label for="arr">
         To:
         <%= text_field_tag(:arr, '', class: 'text-input text-input--wide') %>
+        <%= hidden_field_tag 'arr-hidden' %>
       </label>
     </fieldset><!--
     --><fieldset class="grid__item five-twelfths">
