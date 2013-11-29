@@ -33,7 +33,7 @@ $(document).ready(function() {
   });
 
   arrival.bind('typeahead:selected', function(obj, datum, name) {
-    depHidden.val(datum.code);
+    arrHidden.val(datum.code);
   });
 
   $('#journeyForm').on('submit', function(event) {
@@ -42,9 +42,9 @@ $(document).ready(function() {
       depHidden.remove();
     }
 
-    if (depHidden.val() !== "") {
-      arrival.val(depHidden.val());
-      depHidden.remove();
+    if (arrHidden.val() !== "") {
+      arrival.val(arrHidden.val());
+      arrHidden.remove();
     }
   });
 });
