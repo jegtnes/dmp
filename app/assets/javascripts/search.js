@@ -21,7 +21,9 @@ $(document).ready(function() {
     }
   });
   date.pickadate({
-    format: 'dd/mm/yyyy'
+    format: 'dd/mm/yyyy',
+    min: true,
+    max: 80
   });
   time.pickatime();
 
