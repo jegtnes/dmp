@@ -22,6 +22,7 @@ $(document).ready(function() {
   });
   date.pickadate({
     format: 'dd/mm/yyyy',
+    formatSubmit: 'ddmmyyyy',
     min: true,
     max: 80
   });
