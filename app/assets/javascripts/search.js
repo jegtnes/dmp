@@ -1,40 +1,47 @@
 $(document).ready(function() {
-  $('#arr').typeahead({
+  var arrival = $('#arr'),
+  departure = $('#dep'),
+  arrHidden = $('#arr-hidden'),
+  depHidden = $('#dep-hidden'),
+  date = $('#date'),
+  time = $('#time');
+
+  arrival.typeahead({
     name: 'stations',
     prefetch: {
       url: 'assets/javascripts/rail_stations.json',
       ttl: 0
     }
   });
-  $('#dep').typeahead({
+  departure.typeahead({
     name: 'stations',
     prefetch: {
       url: 'assets/javascripts/rail_stations.json',
       ttl: 0
     }
   });
-  $('#date').pickadate({
+  date.pickadate({
     format: 'dd/mm/yyyy'
   });
-  $('#time').pickatime();
+  time.pickatime();
 
-  $('#dep').bind('typeahead:selected', function(obj, datum, name) {
-    $('#dep-hidden').val(datum.code);
+  departure.bind('typeahead:selected', function(obj, datum, name) {
+    depHidden.val(datum.code);
   });
 
-  $('#arr').bind('typeahead:selected', function(obj, datum, name) {
-    $('#arr-hidden').val(datum.code);
+  arrival.bind('typeahead:selected', function(obj, datum, name) {
+    depHidden.val(datum.code);
   });
 
   $('#journeyForm').on('submit', function(event) {
-    if ($('#dep-hidden').val() != "") {
-      $('#dep').val($('#dep-hidden').val());
-      $('#dep-hidden').remove();
+    if (depHidden.val() !== "") {
+      departure.val(depHidden.val());
+      depHidden.remove();
     }
 
-    if ($('#arr-hidden').val() != "") {
-      $('#arr').val($('#arr-hidden').val());
-      $('#arr-hidden').remove();
+    if (depHidden.val() !== "") {
+      arrival.val(depHidden.val());
+      depHidden.remove();
     }
   });
 });
