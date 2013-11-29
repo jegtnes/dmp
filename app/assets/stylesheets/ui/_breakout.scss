@@ -1,5 +1,5 @@
 .breakout {
-	padding-top: $half-spacing-unit;
+	padding: $base-spacing-unit 0 ;
 	position: relative;
 	z-index: 1;
 	&:before {
@@ -10,6 +10,6 @@
 		right: -100%;
 		content: "";
 		z-index: -1;
-		background-color: rgba(0, 0, 0, .5);
+		@include vertical-gradient(rgba(0,0,0,.9), rgba(0,0,0,0))
 	}
 }
