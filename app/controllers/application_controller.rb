@@ -10,4 +10,9 @@ class ApplicationController < ActionController::Base
   def format_time(time)
     time = Time.zone.parse(time).strftime("%H%M")
   end
+
+  def time_next_half_hour(time)
+    time = (time.to_f/1800).ceil*1800
+    Time.at(time).strftime("%I:%M %p")
+  end
 end

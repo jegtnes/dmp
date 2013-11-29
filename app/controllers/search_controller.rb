@@ -1,6 +1,6 @@
 class SearchController < ApplicationController
   def index
-    @currentTimePadded = Time.now.hour.to_s.rjust(2, '0') + ":" + Time.now.min.to_s.rjust(2, '0')
+    @currentTime = time_next_half_hour(Time.now)
     @currentDate = Date.today.strftime("%d/%m/%Y")
   end
 end
