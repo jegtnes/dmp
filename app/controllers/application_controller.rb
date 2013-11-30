@@ -15,4 +15,11 @@ class ApplicationController < ActionController::Base
     time = (time.to_f/1800).ceil*1800
     Time.at(time).strftime("%I:%M %p")
   end
+
+  def get_station_name_from_code(code)
+    f = File.read(Rails.public_path.to_s + "/assets/javascripts/rail_stations.json")
+    stations = JSON.parse(f)
+    stn = stations.detect { |s| s["code"] == code }
+    stn['value']
+  end
 end
