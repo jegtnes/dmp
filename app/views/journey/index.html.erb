@@ -4,6 +4,7 @@
 
 <table class="journey-listing">
   <tr>
+    <th>Rating</th>
     <th>Departure</th>
     <th>Arrival</th>
     <th>Duration</th>
@@ -13,6 +14,7 @@
 
   <% @journeys.each do |journey| %>
     <tr>
+      <td class="rating"><%= journey["rtg"] %></td>
       <td class="dep"><%= journey["dep"] %></td>
       <td class="arr"><%= journey["arr"] %></td>
       <td class="dur"><%= journey["dur"] %></td>
