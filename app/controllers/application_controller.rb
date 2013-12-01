@@ -23,12 +23,11 @@ class ApplicationController < ActionController::Base
     stn['value']
   end
 
-  # Input: a length of time in the format "6h 55m"
+  # Input: a length of time in the format "6h 55m"/"6m"/"5h"/"5s 20m"
   # Output: total minutes in timestamp
   def fuzzy_timestamp_to_minutes(timestamp)
-    match = /([0-9]{1,3})h ([0-9]{1,2})m/.match(timestamp)
-    hours = match[1].to_i
-    minutes = match[2].to_i
+    hours = timestamp[/([0-9]{1,3})h/, 1].to_i
+    minutes = timestamp[/([0-9]{1,2})m/, 1].to_i
     hours * 60 + minutes
   end
 end
