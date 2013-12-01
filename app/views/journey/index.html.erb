@@ -2,7 +2,7 @@
 
 <h2>You are embarking on a delightful journey from <strong><%= @departure_station %></strong> to <strong><%= @arrival_station %></strong></h2>
 
-<table>
+<table class="journey-listing">
   <tr>
     <th>Departure</th>
     <th>Arrival</th>
@@ -13,11 +13,11 @@
 
   <% @journeys.each do |journey| %>
     <tr>
-      <td><%= journey["dep"] %></td>
-      <td><%= journey["arr"] %></td>
-      <td><%= journey["dur"] %></td>
-      <td><%= journey["chg"] %></td>
-      <td><%= journey["fare"] %></td>
+      <td class="dep"><%= journey["dep"] %></td>
+      <td class="arr"><%= journey["arr"] %></td>
+      <td class="dur"><%= journey["dur"] %></td>
+      <td class="chg"><%= journey["chg"] %></td>
+      <td class="fare"><%= journey["fare"] %></td>
     </tr>
   <% end %>
 </table>
