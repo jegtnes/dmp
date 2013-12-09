@@ -12,5 +12,14 @@
     <th>Price</th>
   </tr>
 
-  <%= rate_journeys @journeys %>
+  <% @journeys.each_with_index do |journey, index| %>
+    <tr class="<%= journey_rating_class(@journeys.length, index) %>">
+      <td class="rating"><%= journey["rtg"] %></td>
+      <td class="dep"><%= journey["dep"] %></td>
+      <td class="arr"><%= journey["arr"] %></td>
+      <td class="dur"><%= journey["dur"] %></td>
+      <td class="chg"><%= journey["chg"] %></td>
+      <td class="fare"><%= journey["fare"] %></td>
+    </tr>
+  <% end %>
 </table>
