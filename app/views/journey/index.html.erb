@@ -12,14 +12,5 @@
     <th>Price</th>
   </tr>
 
-  <% @journeys.each do |journey| %>
-    <tr class="journey--better">
-      <td class="rating"><%= journey["rtg"] %></td>
-      <td class="dep"><%= journey["dep"] %></td>
-      <td class="arr"><%= journey["arr"] %></td>
-      <td class="dur"><%= journey["dur"] %></td>
-      <td class="chg"><%= journey["chg"] %></td>
-      <td class="fare"><%= journey["fare"] %></td>
-    </tr>
-  <% end %>
+  <%= rate_journeys @journeys %>
 </table>
