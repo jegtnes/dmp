@@ -31,3 +31,12 @@
 .text-input--narrow {
 	width: 12rem;
 }
+
+.picker {
+	text-shadow: none;
+}
+
+.picker__day,
+.picker__weekday {
+	text-align: center;
+}
