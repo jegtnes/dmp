@@ -10,15 +10,14 @@ html {
 body {
   min-height: 100%;
   &.controller-search.action-index {
-      color: #fff;
-      background: url('/assets/backgrounds/forthrailbridge2.jpg');
-      background-size: cover;
-  }
-}
-
-a,
-a:visited {
+    a,
+    a:visited {
+        color: #fff;
+    }
     color: #fff;
+    background: url('/assets/backgrounds/forthrailbridge2.jpg');
+    background-size: cover;
+  }
 }
 
 h2 {
