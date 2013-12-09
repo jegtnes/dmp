@@ -1,18 +1,19 @@
-html,
-body {
-    height: 100%;
-    font-family: "europa", "Gill Sans", sans-serif;
-    font-weight: 400;
+html {
+  font-family: "europa", "Gill Sans", sans-serif;
+  font-weight: 400;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 
 body {
-    overflow: hidden;
-    &.controller-search.action-index {
-        color: #fff;
-        background: url('/assets/backgrounds/forthrailbridge2.jpg');
-        background-size: cover;
-    }
+  min-height: 100%;
+  &.controller-search.action-index {
+      color: #fff;
+      background: url('/assets/backgrounds/forthrailbridge2.jpg');
+      background-size: cover;
+  }
 }
 
 a,
