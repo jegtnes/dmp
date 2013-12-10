@@ -2,14 +2,13 @@ html {
   font-family: "europa", "Gill Sans", sans-serif;
   font-weight: 400;
   height: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 
 body {
   min-height: 100%;
   &.controller-search.action-index {
+    overflow-x: hidden;
     a,
     a:visited {
         color: #fff;
