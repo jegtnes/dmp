@@ -5,13 +5,19 @@ $(document).ready(function() {
   depHidden = $('#dep-hidden'),
   date = $('#date'),
   time = $('#time');
+  var stationData;
 
   arrival.typeahead({
     name: 'stations',
     prefetch: {
       url: 'assets/javascripts/rail_stations.json',
-      ttl: 0
-    }
+      ttl: 0,
+      filter: function(data){
+        stationData = data;
+        console.log(stationData);
+        return data;
+      }
+    },
   });
   departure.typeahead({
     name: 'stations',
