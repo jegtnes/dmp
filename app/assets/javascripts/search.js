@@ -36,18 +36,30 @@ $(document).ready(function() {
 
   departure.bind('typeahead:selected', function(obj, datum, name) {
     depHidden.val(datum.code);
+    if (datum.value.match(/\(all stations\)/)) {
+      departure.val(datum.code);
+    }
   });
 
   departure.bind('typeahead:autocompleted', function(obj, datum, name) {
     depHidden.val(datum.code);
+    if (datum.value.match(/\(all stations\)/)) {
+      departure.val(datum.code);
+    }
   });
 
   arrival.bind('typeahead:selected', function(obj, datum, name) {
     arrHidden.val(datum.code);
+    if (datum.value.match(/\(all stations\)/)) {
+      arrival.val(datum.code);
+    }
   });
 
   arrival.bind('typeahead:autocompleted', function(obj, datum, name) {
     arrHidden.val(datum.code);
+    if (datum.value.match(/\(all stations\)/)) {
+      arrival.val(datum.code);
+    }
   });
 
   $('#journeyForm').on('submit', function(event) {
