@@ -13,7 +13,6 @@ $(document).ready(function() {
       url: 'assets/javascripts/rail_stations.json',
       ttl: 0,
       filter: function(data){
-
         // Store all the retrieved JSON data to our own object for usage
         stationData = data;
         console.log(stationData);
@@ -21,6 +20,7 @@ $(document).ready(function() {
       }
     },
   });
+
   departure.typeahead({
     name: 'stations',
     prefetch: {
@@ -28,6 +28,7 @@ $(document).ready(function() {
       ttl: 0
     }
   });
+
   date.pickadate({
     format: 'dd/mm/yyyy',
     formatSubmit: 'ddmmyyyy',
@@ -70,7 +71,6 @@ $(document).ready(function() {
     event.preventDefault();
 
     /* Show search confirmation to make wait seem shorter */
-
     $('#js-dep-conf').text(departure.val());
     $('#js-arr-conf').text(arrival.val());
     $('#js-date-conf').text(date.val());
@@ -78,7 +78,6 @@ $(document).ready(function() {
 
     $('#patience').removeClass('visuallyhidden');
     $('#journeyForm').addClass('visuallyhidden');
-
 
     /* If there's a shortcode available for the train (set earlier)
       Replace the actual value of the field with the stored value */
