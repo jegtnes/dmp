@@ -5,7 +5,12 @@ $(document).ready(function() {
   depHidden   = $('#dep-hidden'),
   date        = $('#date'),
   time        = $('#time'),
-  stationData = false;
+  stationData = false,
+  isLocal     = false;
+
+  if (document.URL.match(/0.0.0.0:3000/) || document.URL.match(/dmp.dev/)) isLocal = true;
+
+  console.log(isLocal);
 
   arrival.typeahead({
     name: 'stations',
