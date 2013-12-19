@@ -64,6 +64,15 @@ $(document).ready(function() {
 
   $('#journeyForm').on('submit', function(event) {
 
+    event.preventDefault();
+    $('#patience').removeClass('visuallyhidden');
+    $('#journeyForm').addClass('visuallyhidden');
+
+    $('#js-dep-conf').text(departure.val());
+    $('#js-arr-conf').text(arrival.val());
+    $('#js-date-conf').text(date.val());
+    $('#js-time-conf').text(time.val());
+
     if (depHidden.val() !== "") {
       departure.val(depHidden.val());
       depHidden.remove();
