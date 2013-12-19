@@ -6,9 +6,12 @@ $(document).ready(function() {
   date        = $('#date'),
   time        = $('#time'),
   stationData = false,
-  isLocal     = false;
+  isLocal     = false,
+  ttl         = 2678400000; // one month: 1000*60*60*24*31
 
   if (document.URL.match(/0.0.0.0:3000/) || document.URL.match(/dmp.dev/)) isLocal = true;
+
+  if (isLocal) ttl = 0;
 
   console.log(isLocal);
 
