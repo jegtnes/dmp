@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 
 # Server
-gem 'thin'
+gem 'unicorn'
 
 # Database-related
 gem 'sqlite3'
