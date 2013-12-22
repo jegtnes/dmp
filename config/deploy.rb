@@ -1,12 +1,5 @@
-require 'capistrano-unicorn'
-
 set :application, 'ProjectBrunel'
 set :repo_url, 'git@github.com:jegtnes/dmp.git'
-
-
-after 'deploy:restart', 'unicorn:reload'    # app IS NOT preloaded
-after 'deploy:restart', 'unicorn:restart'   # app preloaded
-after 'deploy:restart', 'unicorn:duplicate' # before_fork hook implemented (zero downtime deployments)
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
@@ -20,9 +13,9 @@ set :deploy_via, :copy
 set :ssh_options, { :forward_agent => true }
 set :keep_releases, 5
 set :tmp_dir, '/home/alex/tmp'
+set :log_level, :debug
+set :format, :pretty
 
-# set :format, :pretty
-# set :log_level, :debug
 # set :pty, true
 
 # set :linked_files, %w{config/database.yml}
