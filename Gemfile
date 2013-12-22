@@ -24,6 +24,7 @@ group :development do
   gem 'rack-livereload'
   gem 'rb-fsevent',              :require => false
   gem 'capistrano'
+  gem 'capistrano-unicorn',     :require => false
 end
 
 # Assets
