@@ -1,10 +1,18 @@
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'ProjectBrunel'
+set :repo_url, 'git@github.com:jegtnes/dmp.git'
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
-# set :deploy_to, '/var/www/my_app'
-# set :scm, :git
+set :deploy_to, '/home/rails'
+set :scm, :git
+set :branch, "master"
+set :user, "alex"
+set :use_sudo, false
+set :rails_env, "production"
+set :deploy_via, :copy
+set :ssh_options, { :forward_agent => true }
+set :keep_releases, 5
+set :tmp_dir, '/home/alex/tmp'
 
 # set :format, :pretty
 # set :log_level, :debug
