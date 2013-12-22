@@ -15,6 +15,7 @@ set :keep_releases, 5
 set :tmp_dir, '/home/alex/tmp'
 set :log_level, :debug
 set :format, :pretty
+set :rbenv_ruby, File.read('.ruby-version').strip
 
 # set :pty, true
 
