@@ -7,6 +7,7 @@ set :deploy_to, '/home/rails'
 set :scm, :git
 set :branch, "master"
 set :user, "alex"
+set :group, "deployers"
 set :use_sudo, false
 set :rails_env, "production"
 set :deploy_via, :copy
