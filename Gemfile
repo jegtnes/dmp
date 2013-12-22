@@ -24,7 +24,7 @@ group :development do
   gem 'rack-livereload'
   gem 'rb-fsevent',              :require => false
   gem 'capistrano'
-  gem 'capistrano-rbenv'
+  gem 'capistrano-rbenv', github: "capistrano/rbenv"
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
 end
