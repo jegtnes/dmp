@@ -16,7 +16,7 @@ $(document).ready(function() {
   arrival.typeahead({
     name: 'stations',
     prefetch: {
-      url: <%= asset_path('javascripts/rail_stations.json') %>,
+      url: "<%= asset_path('assets/javascripts/rail_stations.json') %>",
       ttl: ttl,
       filter: function(data){
         // Store all the retrieved JSON data to our own object for usage
@@ -30,7 +30,7 @@ $(document).ready(function() {
   departure.typeahead({
     name: 'stations',
     prefetch: {
-      url: <%= asset_path('javascripts/rail_stations.json') %>,
+      url: "<%= asset_path('assets/javascripts/rail_stations.json') %>",
       ttl: ttl
     }
   });
