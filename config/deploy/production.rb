@@ -1,4 +1,6 @@
 set :stage, :production
+set :rails_env,   "production"
+set :unicorn_env, "production"
 
 # Simple Role Syntax
 # ==================
