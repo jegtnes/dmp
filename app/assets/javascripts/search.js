@@ -13,13 +13,11 @@ $(document).ready(function() {
 
   if (isLocal) ttl = 0;
 
-  console.log(isLocal);
-
   arrival.typeahead({
     name: 'stations',
     prefetch: {
       url: 'assets/javascripts/rail_stations.json',
-      ttl: 0,
+      ttl: ttl,
       filter: function(data){
         // Store all the retrieved JSON data to our own object for usage
         stationData = data;
@@ -33,7 +31,7 @@ $(document).ready(function() {
     name: 'stations',
     prefetch: {
       url: 'assets/javascripts/rail_stations.json',
-      ttl: 0
+      ttl: ttl
     }
   });
 
