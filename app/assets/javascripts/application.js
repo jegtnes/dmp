@@ -10,6 +10,9 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
+//= stub ./scraper/casper.js
+//= stub ./scraper/test.js
 //= require jquery
 //= require jquery_ujs
 //= require typeahead
