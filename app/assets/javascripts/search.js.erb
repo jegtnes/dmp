@@ -73,8 +73,6 @@ $(document).ready(function() {
 
   $('#journeyForm').on('submit', function(event) {
 
-    event.preventDefault();
-
     /* Show search confirmation to make wait seem shorter */
     $('#js-dep-conf').text(departure.val());
     $('#js-arr-conf').text(arrival.val());
@@ -95,5 +93,7 @@ $(document).ready(function() {
       arrival.val(arrHidden.val());
       arrHidden.remove();
     }
+
+    return true;
   });
 });
