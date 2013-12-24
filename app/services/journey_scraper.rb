@@ -6,7 +6,7 @@ class JourneyScraper
     @time = time
   end
 
-  def call
-    `/usr/local/bin/casperjs ../dmp-scraper/casper.js #{@dep} #{@arr} #{@date} #{@time} 2>&1 | grep -v "CoreText performance note"`
+  def call(command)
+    `#{command} #{@dep} #{@arr} #{@date} #{@time} 2>&1 | grep -v "CoreText performance note"`
   end
 end
