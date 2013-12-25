@@ -4,7 +4,7 @@ set :repo_url, 'git@github.com:jegtnes/dmp.git'
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 set :deploy_to, '/home/rails'
-set :scm, 'gitsubmodules'
+set :scm, :gitsubmodules
 set :branch, "master"
 set :user, "alex"
 set :group, "deployers"
