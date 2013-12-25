@@ -46,8 +46,6 @@ GEM
     capistrano-rails (1.1.0)
       capistrano (>= 3.0.0)
       capistrano-bundler (>= 1.0.0)
-    capistrano-scm-gitsubmodules (1.0.0)
-      capistrano (>= 3.0.0.pre)
     celluloid (0.15.2)
       timers (~> 1.1.0)
     coderay (1.1.0)
@@ -186,7 +184,6 @@ DEPENDENCIES
   capistrano-bundler
   capistrano-rails
   capistrano-rbenv!
-  capistrano-scm-gitsubmodules
   coffee-rails (~> 4.0.0)
   guard (>= 2.2.2)
   guard-livereload
