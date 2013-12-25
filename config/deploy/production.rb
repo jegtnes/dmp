@@ -8,8 +8,6 @@ set :unicorn_env, "production"
 # server in each group is considered to be the first
 # unless any hosts have the primary property set.
 role :app, %w{alex@95.85.9.18}
-role :web, %w{alex@95.85.9.18}
-role :db,  %w{alex@95.85.9.18}
 
 # Extended Server Syntax
 # ======================
@@ -18,7 +16,7 @@ role :db,  %w{alex@95.85.9.18}
 # something that quacks like a hash can be used to set
 # extended properties on the server.
 
-server '95.85.9.18', user: 'alex', roles: %w{web app db}
+server '95.85.9.18', user: 'alex', roles: %w{web}
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
