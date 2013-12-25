@@ -52,7 +52,7 @@ namespace :deploy do
       # end
     end
   end
-  before :precompile_assets, 'deploy:git_submodules'
+  before :compile_assets, 'deploy:git_submodules'
   after :finishing, 'deploy:cleanup'
 
 end
