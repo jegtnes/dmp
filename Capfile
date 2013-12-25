@@ -8,7 +8,7 @@ require "capistrano/rbenv"
 require "capistrano/bundler"
 require "capistrano/rails/assets"
 require "capistrano/rails/migrations"
-
+require "capistrano/gitsubmodules"
 
 # Includes tasks from other gems included in your Gemfile
 #

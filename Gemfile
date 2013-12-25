@@ -27,6 +27,7 @@ group :development do
   gem 'capistrano-rbenv', github: "capistrano/rbenv"
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
+  gem 'capistrano-scm-gitsubmodules'
 end
 
 # Assets

@@ -4,7 +4,7 @@ set :repo_url, 'git@github.com:jegtnes/dmp.git'
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 set :deploy_to, '/home/rails'
-set :scm, :git
+set :scm, 'gitsubmodules'
 set :branch, "master"
 set :user, "alex"
 set :group, "deployers"
@@ -53,7 +53,7 @@ namespace :deploy do
       # end
     end
   end
-  before :compile_assets, 'deploy:git_submodules'
+  # before :compile_assets, 'deploy:git_submodules'
   after :finishing, 'deploy:cleanup'
 
 end
