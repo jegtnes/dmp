@@ -32,10 +32,12 @@ namespace :deploy do
 
   desc "Install git submodules"
   task :git_submodules do
-    execute :cd, release_path
-    execute :git, 'submodule init'
-    execute :cd, release_path
-    execute :git, 'submodule update'
+    on roles(:app) do
+      execute :cd, release_path
+      execute :git, 'submodule init'
+      execute :cd, release_path
+      execute :git, 'submodule update'
+    end
   end
 
   desc 'Restart application'
