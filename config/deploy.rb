@@ -29,14 +29,12 @@ set :git_enable_submodules, 1
 # set :keep_releases, 5
 
 namespace :deploy do
-  desc "Install git submodules"
-  task :git_submodules do
-    run "cd #{release_path} && git submodule init"
-    run "cd #{release_path} && git submodule update"
-  end
-
-  task :after_update_code do
-    git_submodules
+  before :assets_precompile do
+    desc "Install git submodules"
+    task :git_submodules do
+      run "cd #{release_path} && git submodule init"
+      run "cd #{release_path} && git submodule update"
+    end
   end
 
   desc 'Restart application'
