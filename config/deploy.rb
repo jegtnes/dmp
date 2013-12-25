@@ -10,6 +10,7 @@ set :user, "alex"
 set :group, "deployers"
 set :use_sudo, false
 set :rails_env, "production"
+set :copy_strategy, :checkout
 set :deploy_via, :copy
 set :ssh_options, { :forward_agent => true }
 set :keep_releases, 5
