@@ -17,6 +17,7 @@ set :tmp_dir, '/home/alex/tmp'
 set :log_level, :debug
 set :format, :pretty
 set :rbenv_ruby, File.read('.ruby-version').strip
+set :git_enable_submodules, 1
 
 # set :pty, true
 
