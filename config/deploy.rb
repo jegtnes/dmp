@@ -40,8 +40,8 @@ namespace :deploy do
   desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
-      # Your restart mechanism here, for example:
-      # execute :touch, release_path.join('tmp/restart.txt')
+      execute :echo, "Restarting Unicorn…"
+      execute :sudo, '/home/unicorn/restart.sh'
     end
   end
 
@@ -55,5 +55,6 @@ namespace :deploy do
   end
   before :compile_assets, 'deploy:install_latest_scraper'
   after :finishing, 'deploy:cleanup'
+  after :finishing, 'deploy:restart'
 
 end
