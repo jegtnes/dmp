@@ -33,7 +33,7 @@ namespace :deploy do
   desc "Install git submodules"
   task :git_submodules do
     on roles(:app) do
-      execute "cd '#{deploy_to}'; git submodule init; git submodule update"
+      execute "svn export https://github.com/jegtnes/dmp-scraper/trunk #{release_path.join('app/assets/javascripts/scraper')}"
     end
   end
 
