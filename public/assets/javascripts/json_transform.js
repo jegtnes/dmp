@@ -18,7 +18,7 @@ for(var i = 0; i < trains.length; i++) {
 
 stations = JSON.stringify(stationData);
 
-fs.writeFile("public/assets/javascripts/rail_stations.json", stations, function(err) {
+fs.writeFile("public/json/rail_stations.json", stations, function(err) {
     if(err) {
         console.log(err);
     } else {
