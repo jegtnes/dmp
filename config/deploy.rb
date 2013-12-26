@@ -30,8 +30,8 @@ set :git_enable_submodules, 1
 
 namespace :deploy do
 
-  desc "Install git submodules"
-  task :git_submodules do
+  desc "Installing the latest version of the scraper because jesus christ capistrano and submodules do *not* go together"
+  task :install_latest_scraper do
     on roles(:app) do
       execute "svn export https://github.com/jegtnes/dmp-scraper/trunk #{release_path.join('app/assets/javascripts/scraper')} --force"
     end
@@ -53,7 +53,7 @@ namespace :deploy do
       # end
     end
   end
-  before :compile_assets, 'deploy:git_submodules'
+  before :compile_assets, 'deploy:install_latest_scraper'
   after :finishing, 'deploy:cleanup'
 
 end
