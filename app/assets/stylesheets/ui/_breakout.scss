@@ -1,5 +1,5 @@
 .breakout {
-	padding: $base-spacing-unit 0 ;
+	padding: $half-spacing-unit;
 	position: relative;
 	z-index: 1;
 	text-shadow: #000 0 1px 1px;
@@ -13,5 +13,9 @@
 		content: "";
 		z-index: -1;
 		@include vertical-gradient(rgba(0,0,0,.75), rgba(0,0,0,0))
+	}
+
+	@include mq(46.875em) {
+		padding: $base-spacing-unit;
 	}
 }
