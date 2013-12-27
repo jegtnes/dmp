@@ -1,3 +1,17 @@
 .hero {
 	text-align: center;
 }
+
+.hero--headers__main,
+.hero--headers__sub {
+	line-height: 1;
+	margin-bottom: 0.5rem;
+}
+
+.hero--headers__main {
+	font-size: 2.75rem;
+}
+
+.hero--headers__sub {
+	font-size: 1.3rem;
+}
