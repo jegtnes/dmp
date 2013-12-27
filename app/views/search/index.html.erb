@@ -5,7 +5,7 @@
   </div>
 
   <%= form_tag("/journey", method: "get", class: 'grid form-fields form--search', id: 'journeyForm') do %>
-    <fieldset class="grid__item seven-twelfths">
+    <fieldset class="grid__item search-stations">
       <label for="dep">
         From:
         <%= text_field_tag(:dep, '', class: 'text-input text-input--wide') %>
@@ -18,7 +18,7 @@
         <%= hidden_field_tag 'arr-hidden' %>
       </label>
     </fieldset><!--
-    --><fieldset class="grid__item five-twelfths">
+    --><fieldset class="grid__item search-time">
       <label for="date">
         Date:
         <%= date_field_tag :date, @currentDate, class: 'text-input text-input--narrow' %>
