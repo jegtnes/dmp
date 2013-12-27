@@ -4,3 +4,9 @@
     background: -moz-linear-gradient(center top, $start 0%, $stop 100%);
     background: -moz-gradient(center top, $start 0%, $stop 100%);
 }
+
+@mixin mq($width){
+	@media only screen and (min-width:$width) {
+		@content;
+	}
+}
