@@ -1,3 +1,9 @@
+.twitter-typeahead {
+	@include mq(26.25em) {
+		margin-left: 2em;
+	}
+}
+
 .tt-hint {
 	color: rgba(255, 255, 255, .5);
 	padding: 0 .375rem 0 0;

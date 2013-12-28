@@ -6,17 +6,14 @@
 
   <%= form_tag("/journey", method: "get", class: 'grid form-fields form--search', id: 'journeyForm') do %>
     <fieldset class="grid__item search-stations">
-      <label for="dep">
-        From:
-        <%= text_field_tag(:dep, '', class: 'text-input text-input--wide') %>
-        <%= hidden_field_tag 'dep-hidden' %>
-      </label>
+      <label for="dep">From:</label>
+      <%= text_field_tag(:dep, '', class: 'text-input text-input--wide') %>
+      <%= hidden_field_tag 'dep-hidden' %>
 
-      <label for="arr">
-        To:
-        <%= text_field_tag(:arr, '', class: 'text-input text-input--wide') %>
-        <%= hidden_field_tag 'arr-hidden' %>
-      </label>
+      <label for="arr">To:</label>
+      <%= text_field_tag(:arr, '', class: 'text-input text-input--wide') %>
+      <%= hidden_field_tag 'arr-hidden' %>
+
     </fieldset><!--
     --><fieldset class="grid__item search-time">
       <label for="date">
