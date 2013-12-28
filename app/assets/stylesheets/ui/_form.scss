@@ -24,22 +24,22 @@
 		padding-right: 0;
 		margin: 0;
 	}
+}
 
-	.search-stations,
-	.search-time {
-		width: 100%;
+.search-stations,
+.search-time {
+	width: 100%;
+}
+
+@include mq(46.875em) {
+	.search-stations {
+		text-align: right;
+		width: 62.5%; /* 7/12 */
 	}
 
-	@include mq(46.875em) {
-		.search-stations {
-			text-align: right;
-			width: 62.5%; /* 7/12 */
-		}
-
-		.search-time {
-			text-align: left;
-			width: 37.5%; /* 5/12 */
-		}
+	.search-time {
+		text-align: left;
+		width: 37.5%; /* 5/12 */
 	}
 }
 
