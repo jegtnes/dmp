@@ -1,6 +1,7 @@
 .twitter-typeahead {
-	@include mq(26.25em) {
-		margin-left: 2em;
+	display: block;
+	@include mq(24em) {
+		display: inline-block;
 	}
 }
 

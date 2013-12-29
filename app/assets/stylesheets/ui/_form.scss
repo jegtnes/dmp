@@ -26,6 +26,27 @@
 	}
 }
 
+.search-stations {
+	label {
+		width: 5rem;
+		float: left;
+		clear: left;
+	}
+}
+
+.search-time {
+	@include mq(24em) {
+		label {
+			width: 5rem;
+			float: left;
+			clear: left;
+		}
+	}
+	.field {
+		margin-bottom: 0.5rem;
+	}
+}
+
 .search-stations,
 .search-time {
 	width: 100%;
@@ -49,13 +70,11 @@
 		display: inline-block;
 	}
     max-width: 22rem;
-    width: 100%;
 }
 
 .text-input--narrow {
 	display: block;
     max-width: 22rem;
-    width: 100%;
 }
 
 .picker {
