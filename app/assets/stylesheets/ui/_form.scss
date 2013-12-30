@@ -44,10 +44,23 @@
 }
 
 .search-time {
-
 	.field {
-
 		margin-bottom: 0.5rem;
+	}
+
+	@include mq(35em) {
+		.field {
+			width: 50%;
+			float: left;
+		}
+
+		.text-input {
+			width: 50%;
+		}
+
+		label {
+			width: 5rem;
+		}
 	}
 }
 
