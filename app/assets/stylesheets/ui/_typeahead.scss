@@ -2,6 +2,7 @@
 	display: block !important; //goddamn inline styling
 	@include mq(24em) {
 		display: inline-block !important;
+		top: -.4375rem; // god fucking damnit. 7 px. why? fuck knows
 		width: 75%;
 
 		.text-input {
