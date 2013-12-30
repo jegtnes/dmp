@@ -16,7 +16,7 @@
 		border-color: transparent transparent #fff;
 		padding-top: 0;
 
-		@include mq(26em) {
+		@include mq(24em) {
 			width: 75%;
 		}
 	}
@@ -25,6 +25,9 @@
 		display: inline-block;
 		width: 20%;
 		max-width: 5rem;
+		@include mq(24em) {
+			text-align: right;
+		}
 	}
 
 	fieldset {
