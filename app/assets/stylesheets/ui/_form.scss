@@ -63,6 +63,17 @@
 			width: 5rem;
 		}
 	}
+
+	@include mq(46.875em) {
+		.field {
+			width: 100%;
+			float: none;
+		}
+
+		.text-input {
+			width: 60%;
+		}
+	}
 }
 
 .search-stations,
