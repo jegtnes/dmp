@@ -15,6 +15,16 @@
 		border-width: .0625rem .0625rem .125rem;
 		border-color: transparent transparent #fff;
 		padding-top: 0;
+
+		@include mq(26em) {
+			width: 75%;
+		}
+	}
+
+	label {
+		display: inline-block;
+		width: 20%;
+		max-width: 5rem;
 	}
 
 	fieldset {
@@ -27,22 +37,13 @@
 }
 
 .search-stations {
-	label {
-		width: 5rem;
-		float: left;
-		clear: left;
-	}
+
 }
 
 .search-time {
-	@include mq(24em) {
-		label {
-			width: 5rem;
-			float: left;
-			clear: left;
-		}
-	}
+
 	.field {
+
 		margin-bottom: 0.5rem;
 	}
 }
@@ -62,19 +63,6 @@
 		text-align: left;
 		width: 37.5%; /* 5/12 */
 	}
-}
-
-.text-input--wide {
-	display: block;
-	@include mq(46.875em) {
-		display: inline-block;
-	}
-    max-width: 22rem;
-}
-
-.text-input--narrow {
-	display: block;
-    max-width: 22rem;
 }
 
 .picker {

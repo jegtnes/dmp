@@ -1,7 +1,12 @@
 .twitter-typeahead {
-	display: block;
+	display: block !important; //goddamn inline styling
 	@include mq(24em) {
-		display: inline-block;
+		display: inline-block !important;
+		width: 75%;
+
+		.text-input {
+			width: 100%;
+		}
 	}
 }
 
