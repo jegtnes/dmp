@@ -1,3 +1,0 @@
-[submodule "app/assets/javascripts/scraper"]
-	path = app/assets/javascripts/scraper
-	url = git@github.com:jegtnes/dmp-scraper.git
