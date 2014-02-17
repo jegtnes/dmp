@@ -2,24 +2,38 @@
 
 <h2>You are embarking on a delightful journey from <strong><%= @departure_station %></strong> to <strong><%= @arrival_station %></strong></h2>
 
-<table class="journey-listing">
-  <tr>
-    <th>Rating</th>
-    <th>Departure</th>
-    <th>Arrival</th>
-    <th>Duration</th>
-    <th>Changes</th>
-    <th>Price</th>
-  </tr>
+<div class="grid">
+  <div class="grid__item one-third">
+    <h3>Priorities</h3>
+    <label for="price">Price</label>
+    <input id="price" type="range" min="1" max="10" value="5">
+    <label for="duration">Duration</label>
+    <input id="duration" type="range" min="1" max="10" value="5">
+    <label for="changes">Changes</label>
+    <input id="changes" type="range" min="1" max="10" value="5">
+  </div><!--
+  --><div class="grid__item two-thirds">
+    <table class="journey-listing">
+      <tr>
+        <th>Rating</th>
+        <th>Departure</th>
+        <th>Arrival</th>
+        <th>Duration</th>
+        <th>Changes</th>
+        <th>Price</th>
+      </tr>
 
-  <% @journeys.each_with_index do |journey, index| %>
-    <tr class="<%= journey_rating_class(@journeys.length, index) %>">
-      <td class="rating"><%= journey["rtg"] %></td>
-      <td class="dep"><%= journey["dep"] %></td>
-      <td class="arr"><%= journey["arr"] %></td>
-      <td class="dur"><%= journey["dur"] %></td>
-      <td class="chg"><%= journey["chg"] %></td>
-      <td class="fare"><%= journey["fare"] %></td>
-    </tr>
-  <% end %>
-</table>
+      <% @journeys.each_with_index do |journey, index| %>
+        <tr class="<%= journey_rating_class(@journeys.length, index) %>">
+          <td class="rating"><%= journey["rtg"] %></td>
+          <td class="dep"><%= journey["dep"] %></td>
+          <td class="arr"><%= journey["arr"] %></td>
+          <td class="dur"><%= journey["dur"] %></td>
+          <td class="chg"><%= journey["chg"] %></td>
+          <td class="fare"><%= journey["fare"] %></td>
+        </tr>
+      <% end %>
+    </table>
+
+  </div>
+</div>
