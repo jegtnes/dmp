@@ -11,8 +11,7 @@
 // about supported directives.
 //
 
-//= stub scraper/casper.js
-//= stub scraper/test.js
+//= stub scraper.js
 //= require jquery
 //= require jquery_ujs
 //= require typeahead
