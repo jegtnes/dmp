@@ -28,9 +28,9 @@
           <td class="rating"><%= journey["rtg"] %></td>
           <td class="dep"><%= journey["dep"] %></td>
           <td class="arr"><%= journey["arr"] %></td>
-          <td class="dur"><%= journey["dur"] %></td>
-          <td class="chg"><%= journey["chg"] %></td>
-          <td class="fare"><%= journey["fare"] %></td>
+          <td class="dur" data-rating="<%= journey['durRating'] %>"><%= journey["dur"] %></td>
+          <td class="chg" data-rating="<%= journey['chgRating'] %>"><%= journey["chg"] %></td>
+          <td class="fare" data-rating="<%= journey['fareRating'] %>"><%= journey["fare"] %></td>
         </tr>
       <% end %>
     </table>
