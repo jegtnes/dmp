@@ -11,6 +11,18 @@ $(document).ready(function() {
 
   if (document.URL.match(/0.0.0.0:3000/) || document.URL.match(/dmp.dev/)) isLocal = true;
 
+$('.js-price-slider').on('change', function() {
+  var scale = $(this).val();
+  $('td.fare.js-rating').each(function() {
+    var priceRating = $(this).data('farerating')*scale;
+    var changeRating = $(this).siblings('.chg.js-rating').data('changerating');
+    var durRating = $(this).siblings('.dur.js-rating').data('durationrating');
+    var totalRating = Math.round(priceRating * changeRating * durRating);
+    $(this).parent().data('totalrating', totalRating);
+    $(this).siblings('.rating').text('' + totalRating);
+  });
+});
+
   if (isLocal) ttl = 0;
 
   arrival.typeahead({
