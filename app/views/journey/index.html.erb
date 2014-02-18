@@ -10,30 +10,32 @@
     <label for="duration">Duration</label>
     <input id="duration" class="js-duration-slider" type="range" min="1" max="10" value="5">
     <label for="changes">Changes</label>
-    <input id="changes" class="js-duration-slider" type="range" min="1" max="10" value="5">
+    <input id="changes" class="js-change-slider" type="range" min="1" max="10" value="5">
   </div><!--
   --><div class="grid__item two-thirds">
     <table class="journey-listing">
-      <tr>
-        <th>Rating</th>
-        <th>Departure</th>
-        <th>Arrival</th>
-        <th>Duration</th>
-        <th>Changes</th>
-        <th>Price</th>
-      </tr>
-
-      <% @journeys.each_with_index do |journey, index| %>
-        <tr class="<%= journey_rating_class(@journeys.length, index) %>" data-totalRating="<%= journey["rtg"] %>">
-          <td class="rating"><%= journey["rtg"] %></td>
-          <td class="dep"><%= journey["dep"] %></td>
-          <td class="arr"><%= journey["arr"] %></td>
-          <td class="dur js-rating" data-durationrating="<%= journey['durRating'] %>"><%= journey["dur"] %></td>
-          <td class="chg js-rating" data-changerating="<%= journey['chgRating'] %>"><%= journey["chg"] %></td>
-          <td class="fare js-rating" data-farerating="<%= journey['fareRating'] %>"><%= journey["fare"] %></td>
+      <thead>
+        <tr>
+          <th class="js-rating-header" data-sort="int">Rating</th>
+          <th>Departure</th>
+          <th>Arrival</th>
+          <th>Duration</th>
+          <th>Changes</th>
+          <th>Price</th>
         </tr>
-      <% end %>
+      </thead>
+      <tbody>
+        <% @journeys.each_with_index do |journey, index| %>
+          <tr class="<%= journey_rating_class(@journeys.length, index) %>" data-totalRating="<%= journey["rtg"] %>">
+            <td class="rating"><%= journey["rtg"] %></td>
+            <td class="dep"><%= journey["dep"] %></td>
+            <td class="arr"><%= journey["arr"] %></td>
+            <td class="dur js-rating" data-durationrating="<%= journey['durRating'] %>"><%= journey["dur"] %></td>
+            <td class="chg js-rating" data-changerating="<%= journey['chgRating'] %>"><%= journey["chg"] %></td>
+            <td class="fare js-rating" data-farerating="<%= journey['fareRating'] %>"><%= journey["fare"] %></td>
+          </tr>
+        <% end %>
+      </tbody>
     </table>
-
   </div>
 </div>
