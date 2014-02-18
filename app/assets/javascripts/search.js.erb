@@ -24,6 +24,37 @@ $('.js-price-slider').on('change', function() {
     var totalRating = Math.round(priceRating * changeRating * durRating);
     $(this).parent().data('totalrating', totalRating);
     $(this).siblings('.rating').text('' + totalRating);
+    $(this).closest('table').find('.js-rating-header').click();
+  });
+});
+
+$('.js-duration-slider').on('change', function() {
+  var durationscale = $(this).val();
+  var pricescale = $('.js-price-slider').val();
+  var changescale = $('.js-change-slider').val();
+  $('td.dur.js-rating').each(function() {
+    var priceRating = $(this).siblings('.fare.js-rating').data('farerating')*pricescale;
+    var changeRating = $(this).siblings('.chg.js-rating').data('changerating')*changescale;
+    var durRating = $(this).data('durationrating')*durationscale;
+    var totalRating = Math.round(priceRating * changeRating * durRating);
+    $(this).parent().data('totalrating', totalRating);
+    $(this).siblings('.rating').text('' + totalRating);
+    $(this).closest('table').find('.js-rating-header').click();
+  });
+});
+
+$('.js-change-slider').on('change', function() {
+  var durationscale = $('.js-duration-slider').val();
+  var pricescale = $('.js-price-slider').val();
+  var changescale = $(this).val();
+  $('td.chg.js-rating').each(function() {
+    var priceRating = $(this).siblings('.fare.js-rating').data('farerating')*pricescale;
+    var changeRating = $(this).data('changerating')*changescale;
+    var durRating = $(this).siblings('.dur.js-rating').data('durationrating')*durationscale;
+    var totalRating = Math.round(priceRating * changeRating * durRating);
+    $(this).parent().data('totalrating', totalRating);
+    $(this).siblings('.rating').text('' + totalRating);
+    $(this).closest('table').find('.js-rating-header').click();
   });
 });
 
