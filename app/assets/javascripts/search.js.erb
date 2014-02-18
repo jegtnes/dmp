@@ -11,6 +11,8 @@ $(document).ready(function() {
 
   if (document.URL.match(/0.0.0.0:3000/) || document.URL.match(/dmp.dev/)) isLocal = true;
 
+$('.journey-listing').stupidtable();
+
 $('.js-price-slider').on('change', function() {
   var scale = $(this).val();
   $('td.fare.js-rating').each(function() {

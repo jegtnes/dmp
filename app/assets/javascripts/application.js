@@ -18,4 +18,5 @@
 //= require picker
 //= require picker.date
 //= require picker.time
+//= require stupidtable.min
 //= require_tree .
