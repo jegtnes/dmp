@@ -14,11 +14,13 @@ $(document).ready(function() {
 $('.journey-listing').stupidtable();
 
 $('.js-price-slider').on('change', function() {
-  var scale = $(this).val();
+  var durationscale = $('.js-duration-slider').val();
+  var pricescale = $(this).val();
+  var changescale = $('.js-change-slider').val();
   $('td.fare.js-rating').each(function() {
-    var priceRating = $(this).data('farerating')*scale;
-    var changeRating = $(this).siblings('.chg.js-rating').data('changerating');
-    var durRating = $(this).siblings('.dur.js-rating').data('durationrating');
+    var priceRating = $(this).data('farerating')*pricescale;
+    var changeRating = $(this).siblings('.chg.js-rating').data('changerating')*changescale;
+    var durRating = $(this).siblings('.dur.js-rating').data('durationrating')*durationscale;
     var totalRating = Math.round(priceRating * changeRating * durRating);
     $(this).parent().data('totalrating', totalRating);
     $(this).siblings('.rating').text('' + totalRating);
