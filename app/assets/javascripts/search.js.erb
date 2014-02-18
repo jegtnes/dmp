@@ -13,6 +13,20 @@ $(document).ready(function() {
 
 $('.journey-listing').stupidtable();
 
+$('.journey-listing').bind('beforetablesort', function (event, data) {
+  if (data.column == 0) {
+    $(this).addClass('visuallyhidden');
+  }
+});
+$('.journey-listing').bind('aftertablesort', function (event, data) {
+  if (data.column == 0) {
+    $(this).removeClass('visuallyhidden');
+    if (data.direction == 'desc') {
+        $(this).find('.js-rating-header').click()
+      }
+  }
+});
+
 $('.js-price-slider').on('change', function() {
   var durationscale = $('.js-duration-slider').val();
   var pricescale = $(this).val();
