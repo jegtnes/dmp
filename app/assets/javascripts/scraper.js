@@ -36,11 +36,11 @@ function fetchJourneys() {
 		}
 
 		function lengthRating(length) {
-			return length*2;
+			return fuzzyTimestampToMinutes(length)*2;
 		}
 
 		function priceRating(price) {
-			return price;
+			return price.replace(/[£.]/g, '')/100;
 		}
 
 		function changeRating(changes) {
@@ -48,8 +48,6 @@ function fetchJourneys() {
 		}
 
 		function journeyRating(length, changes, price) {
-			length = fuzzyTimestampToMinutes(length);
-			price = price.replace(/[£.]/g, '')/100;
 			return Math.round(lengthRating(length) * priceRating(price) * changeRating(changes));
 		}
 
