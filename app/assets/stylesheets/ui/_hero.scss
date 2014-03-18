@@ -4,6 +4,14 @@
 
 .hero--headers {
 	padding-bottom: $half-spacing-unit/2;
+	color: $white;
+	a {
+		color: $white;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 
 	@include mq(46.875em) {
 		padding-bottom: $base-spacing-unit;

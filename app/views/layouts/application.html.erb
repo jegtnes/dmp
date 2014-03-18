@@ -39,6 +39,12 @@
 <body class="controller-<%= params[:controller] %> action-<%= params[:action] %>">
 
   <div class="container--site">
+    <div class="breakout">
+      <div class="hero hero--headers">
+        <h1 class="hero--headers__main"><%= link_to("Project Brunel", root_path)%></h1>
+        <h2 class="hero--headers__sub">A different way to plan your British train journeys</h2>
+      </div>
+    </div>
     <%= yield %>
   </div>
 </body>
