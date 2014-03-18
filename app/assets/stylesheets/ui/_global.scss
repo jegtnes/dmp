@@ -17,17 +17,24 @@ body {
         color: $white;
     }
     color: $white;
-    background: image-url('backgrounds/forthrailbridge2.jpg');
-    background-size: cover;
   }
+  background: image-url('backgrounds/forthrailbridge2.jpg');
+  background-size: cover;
+}
+
+.results {
+  background-color: $white;
+  max-width: 45em;
+  padding: 1em;
+  margin: 0 auto;
 }
 
 h2 {
-  font-family: "reklame-script";
+  font-family: "europa";
   font-weight: 400;
   strong {
     font-family: "europa";
-    font-weight: 400;
+    font-weight: 800;
     text-transform: uppercase;
   }
 }
