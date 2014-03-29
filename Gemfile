@@ -5,6 +5,8 @@ gem 'rails', '4.0.4'
 # Server
 gem 'unicorn'
 
+gem 'sqlite3'
+
 # Preprocessing
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
