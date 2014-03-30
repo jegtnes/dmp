@@ -197,6 +197,7 @@ DEPENDENCIES
   polar-express
   rack-livereload
   rails (= 4.0.4)
+  rake (= 10.2.2)
   rb-fsevent
   sass-rails (~> 4.0.0)
   sdoc
