@@ -1,18 +1,18 @@
 .picker {
-	left: 0;
+  left: 0;
 
-	@include mq(35em) {
-		width: 29.125rem;
-		left: 5.25rem;
-	}
+  @include mq(35em) {
+    width: 29.125rem;
+    left: 5.25rem;
+  }
 
-	@include mq(46.875em) {
-		margin-left: -67.5%;
-		left: 0;
-	}
+  @include mq(46.875em) {
+    margin-left: -67.5%;
+    left: 0;
+  }
 }
 
 .picker__list-item {
-	width: 50%;
-	float: left;
+  width: 50%;
+  float: left;
 }

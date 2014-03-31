@@ -1,22 +1,22 @@
 .journey-listing {
-	width: auto;
-	font-size: 1.5rem;
-	.dep {
-		&::after {
-			content: "—";
-			margin-left: 1.5rem;
-		}
-	}
+  width: auto;
+  font-size: 1.5rem;
+  .dep {
+    &::after {
+      content: "—";
+      margin-left: 1.5rem;
+    }
+  }
 }
 
 // .journey--bad {
-// 	background-color: $red;
+//   background-color: $red;
 // }
 
 // .journey--good {
-// 	background-color: $white;
+//   background-color: $white;
 // }
 
 // .journey--better {
-// 	background-color: $green;
+//   background-color: $green;
 // }
