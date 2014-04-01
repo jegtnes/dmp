@@ -2,11 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.4'
 
-# Server
 gem 'unicorn'
-
 gem 'sqlite3'
-
 gem 'rake', '10.2.2'
 
 # Preprocessing
