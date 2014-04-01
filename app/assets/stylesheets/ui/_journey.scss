@@ -1,6 +1,7 @@
 .journey-listing {
   width: auto;
   font-size: 1.5rem;
+
   .dep {
     &::after {
       content: "—";
@@ -8,15 +9,3 @@
     }
   }
 }
-
-// .journey--bad {
-//   background-color: $red;
-// }
-
-// .journey--good {
-//   background-color: $white;
-// }
-
-// .journey--better {
-//   background-color: $green;
-// }

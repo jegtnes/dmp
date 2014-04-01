@@ -2,6 +2,7 @@
   max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
+
   .text-input,
   label {
     font-size: 1.5rem;
@@ -25,10 +26,11 @@
   }
 
   label {
-    color: rgba($white, 0.75);
+    color: rgba($white, .75);
     display: inline-block;
     width: 20%;
     max-width: 5rem;
+
     @include mq(24em) {
       text-align: right;
     }
@@ -41,13 +43,9 @@
   }
 }
 
-.search-stations {
-
-}
-
 .search-time {
   .field {
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
     position: relative;
   }
 
