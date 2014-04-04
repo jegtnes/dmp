@@ -6,9 +6,8 @@ class JourneyController < ApplicationController
     dep = params[:dep]
     arr = params[:arr]
     journey_scraper = JourneyScraper.new(dep, arr, date, time)
-    # TODO: This is fugly
-    @journeys = (JSON.parse journey_scraper.call('/usr/local/bin/casperjs app/assets/javascripts/scraper.js'))
-    .sort { | a, b | a['rtg'] <=> b['rtg'] }
+    @journeys = journey_scraper.call('/usr/local/bin/casperjs app/assets/javascripts/scraper.js')
+    @journeys = journey_scraper.parse(@journeys)
     @departure_station = get_station_name_from_code(dep)
     @arrival_station = get_station_name_from_code(arr)
   end

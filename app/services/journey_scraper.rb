@@ -10,4 +10,8 @@ class JourneyScraper
   def call(command)
     `#{command} #{@dep} #{@arr} #{@date} #{@time} 2>&1 | grep -v "CoreText performance note"`
   end
+
+  def parse(data)
+    JSON.parse(data).sort { |a, b| a['rtg'] <=> b['rtg'] }
+  end
 end
