@@ -5,6 +5,7 @@ gem 'rails', '4.0.4'
 gem 'unicorn'
 gem 'sqlite3'
 gem 'rake', '10.2.2'
+gem 'dotenv-rails'
 
 # Preprocessing
 gem 'sass-rails', '~> 4.0.0'
