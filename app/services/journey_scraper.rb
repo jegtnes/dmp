@@ -1,3 +1,4 @@
+# A helper class to run the Casper.js journey scraper.
 class JourneyScraper
   def initialize(departure, arrival, date, time)
     @dep = departure
