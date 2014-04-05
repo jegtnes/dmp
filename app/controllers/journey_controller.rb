@@ -6,8 +6,8 @@ class JourneyController < ApplicationController
     dep = params[:dep]
     arr = params[:arr]
     journey_scraper = JourneyScraper.new(dep, arr, date, time)
-    @journeys = journey_scraper.call("#{ENV['CASPER_PATH']} #{ENV['SCRAPER_PATH']}")
-    @journeys = journey_scraper.parse(@journeys)
+    @cmd = journey_scraper.call("#{ENV['CASPER_PATH']} #{ENV['SCRAPER_PATH']}")
+    @journeys = journey_scraper.parse(@cmd)
     @departure_station = get_station_name_from_code(dep)
     @arrival_station = get_station_name_from_code(arr)
   end
