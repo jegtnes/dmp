@@ -91,7 +91,7 @@ casper.waitFor(function check() {
 }, function then() {    // step to execute when check() is ok
 	fetchJourneys();
 }, function timeout() { // step to execute if check has failed
-	error = {error: "Not able to get more train times."}
+	error = [{"error": "Not able to get more train times."}]
 	this.echo(JSON.stringify(error)).exit();
 }, 5000);
 
