@@ -14,6 +14,11 @@ class JourneyScraper
 
   # Checks for errors and parses the data into the format we'd like it in
   def parse(data)
-    JSON.parse(data).sort { |a, b| a['rtg'] <=> b['rtg'] }
+    data = JSON.parse data
+    if !data.first['error']
+      data.sort { |a, b| a['rtg'] <=> b['rtg'] }
+    else
+      nil
+    end
   end
 end
