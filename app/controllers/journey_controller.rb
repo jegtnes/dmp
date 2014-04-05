@@ -8,7 +8,7 @@ class JourneyController < ApplicationController
     journey_scraper = JourneyScraper.new(dep, arr, date, time)
     cmd = journey_scraper.call("#{ENV['CASPER_PATH']} #{ENV['SCRAPER_PATH']}")
     @journeys = journey_scraper.parse(cmd)
-    fail "Journeys not found!" if @journeys.nil?
+    redirect_to root_url, alert: 'Journey could not be found.' if @journeys.nil?
     @departure_station = get_station_name_from_code(dep)
     @arrival_station = get_station_name_from_code(arr)
   end
