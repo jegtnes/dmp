@@ -44,6 +44,20 @@
         <h1 class="hero--headers__main"><%= link_to("Project Brunel", root_path)%></h1>
         <h2 class="hero--headers__sub">A different way to plan your British train journeys</h2>
       </div>
+      <% flash.each do |name, msg| -%>
+        <% if msg = :journey_not_found %>
+          <div id="journey_not_found" class="flash flash--error">
+            Could not find journey. There could be several reasons for this:
+            <ol>
+              <li>You've searched for a station that doesn't exist</li>
+              <li>You've mistakenly searched for a travel time in the past</li>
+              <li>The journey planning server is down</li>
+            </ol>
+            Please do accept our humble apologies for this. Perhaps try modifying your search?
+          </div>
+        <% else puts content_tag :div, msg, class: name %>
+        <% end %>
+      <% end -%>
     </div>
     <%= yield %>
   </div>
