@@ -9,7 +9,8 @@ class JourneyScraper
 
   # Runs the command, hopefully getting results
   def call(command)
-    `#{command} #{@dep} #{@arr} #{@date} #{@time} 2>&1 | grep -v "CoreText performance note"`
+    `#{command} #{@dep} #{@arr} #{@date} #{@time} 2>&1 | \
+    grep -v "CoreText performance note"`
   end
 
   # Checks for errors and parses the data into the format we'd like it in
