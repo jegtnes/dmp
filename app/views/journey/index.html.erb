@@ -6,15 +6,23 @@
     <a href="/" class>(edit)</a>
   </h2>
 
-  <ol>
+  <ol class="journeys">
   <% @journeys.each_with_index do |journey, index| %>
     <li class="journey <%= journey_rating_class(@journeys.length, index) %>" data-totalRating="<%= journey["rtg"] %>">
-      <span class="rating"><%= journey["rtg"] %></span>
-      <span class="dep"><%= journey["dep"] %></span>
-      <span class="arr"><%= journey["arr"] %></span>
-      <span class="dur js-rating" data-durationrating="<%= journey['durRating'] %>"><%= journey["dur"] %></span>
-      <span class="chg js-rating" data-changerating="<%= journey['chgRating'] %>"><%= journey["chg"] %></span>
-      <span class="fare js-rating" data-farerating="<%= journey['fareRating'] %>"><%= journey["fare"] %></span>
+      <div class="journey--timespan">
+        <span class="dep"><%= journey["dep"] %></span>—<span class="arr"><%= journey["arr"] %></span>
+      </div>
+      <div class="journey--duration js-rating" data-durationrating="<%= journey['durRating'] %>">
+        <i class="icon-time"></i>
+        <%= journey["dur"] %>
+      </div>
+      <div class="journey--changes js-rating" data-changerating="<%= journey['chgRating'] %>">
+        <i class="icon-changes"></i>
+        <%= journey["chg"] %>
+      </div>
+      <div class="journy--fare js-rating" data-farerating="<%= journey['fareRating'] %>">
+        <%= journey["fare"] %>
+      </div>
     </li>
   <% end %>
   </ol>
