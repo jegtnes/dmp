@@ -2,13 +2,13 @@
   <fieldset class="grid__item search-stations">
     <div class="field">
       <label for="dep">From:</label>
-      <%= text_field_tag(:dep, '', class: 'text-input text-input--wide') %>
+      <%= text_field_tag(:dep, '', required: true, class: 'text-input text-input--wide') %>
       <%= hidden_field_tag 'dep-hidden' %>
     </div>
 
     <div class="field">
       <label for="arr">To:</label>
-      <%= text_field_tag(:arr, '', class: 'text-input text-input--wide') %>
+      <%= text_field_tag(:arr, '', required: true, class: 'text-input text-input--wide') %>
       <%= hidden_field_tag 'arr-hidden' %>
     </div>
   </fieldset><!--
@@ -16,12 +16,12 @@
   --><fieldset class="grid__item search-time">
     <div class="field">
       <label for="date">Date:</label>
-      <%= date_field_tag :date, @currentDate, class: 'text-input text-input--narrow' %>
+      <%= date_field_tag :date, @currentDate, required: true, class: 'text-input text-input--narrow' %>
     </div>
 
     <div class="field">
       <label for="time">Time:</label>
-      <%= time_field_tag :time, @currentTime, class: 'text-input text-input--narrow' %>
+      <%= time_field_tag :time, @currentTime, required: true, class: 'text-input text-input--narrow' %>
     </div>
   </fieldset>
     <%= button_tag "Search", type: :submit, class: "btn btn--beta btn--hollow btn--cta" %>
