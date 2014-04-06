@@ -6,32 +6,16 @@
     <a href="/" class>(edit)</a>
   </h2>
 
-  <div class="grid">
-    <div class="grid__item one-whole">
-      <table class="journey-listing">
-        <thead>
-          <tr>
-            <th class="rating js-rating-header" data-sort="int">Rating</th>
-            <th>Departure</th>
-            <th>Arrival</th>
-            <th>Duration</th>
-            <th>Changes</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% @journeys.each_with_index do |journey, index| %>
-            <tr class="<%= journey_rating_class(@journeys.length, index) %>" data-totalRating="<%= journey["rtg"] %>">
-              <td class="rating"><%= journey["rtg"] %></td>
-              <td class="dep"><%= journey["dep"] %></td>
-              <td class="arr"><%= journey["arr"] %></td>
-              <td class="dur js-rating" data-durationrating="<%= journey['durRating'] %>"><%= journey["dur"] %></td>
-              <td class="chg js-rating" data-changerating="<%= journey['chgRating'] %>"><%= journey["chg"] %></td>
-              <td class="fare js-rating" data-farerating="<%= journey['fareRating'] %>"><%= journey["fare"] %></td>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
-    </div>
-  </div>
+  <ol>
+  <% @journeys.each_with_index do |journey, index| %>
+    <li class="journey <%= journey_rating_class(@journeys.length, index) %>" data-totalRating="<%= journey["rtg"] %>">
+      <span class="rating"><%= journey["rtg"] %></span>
+      <span class="dep"><%= journey["dep"] %></span>
+      <span class="arr"><%= journey["arr"] %></span>
+      <span class="dur js-rating" data-durationrating="<%= journey['durRating'] %>"><%= journey["dur"] %></span>
+      <span class="chg js-rating" data-changerating="<%= journey['chgRating'] %>"><%= journey["chg"] %></span>
+      <span class="fare js-rating" data-farerating="<%= journey['fareRating'] %>"><%= journey["fare"] %></span>
+    </li>
+  <% end %>
+  </ol>
 </section>
