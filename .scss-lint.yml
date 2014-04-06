@@ -1,6 +1,6 @@
 linters:
   Indentation:
-    enabled: true
+    enabled: false
     width: 2
   Comment:
     enabled: false
