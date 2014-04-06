@@ -18,4 +18,12 @@ module JourneyHelper
     end
     class_name
   end
+
+  def num_of_changes_or_direct(changes)
+    if changes.to_i >= 1
+      "#{changes} changes"
+    else
+      'Direct'
+    end
+  end
 end

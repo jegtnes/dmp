@@ -18,7 +18,7 @@
       </div>
       <div class="journey--changes js-rating" data-changerating="<%= journey['chgRating'] %>">
         <i class="icon-changes"></i>
-        <%= journey["chg"] %>
+        <%= num_of_changes_or_direct(journey["chg"]) %>
       </div>
       <div class="journy--fare js-rating" data-farerating="<%= journey['fareRating'] %>">
         <%= journey["fare"] %>
