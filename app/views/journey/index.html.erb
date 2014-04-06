@@ -12,16 +12,18 @@
       <div class="journey--timespan">
         <span class="dep"><%= journey["dep"] %></span>—<span class="arr"><%= journey["arr"] %></span>
       </div>
-      <div class="journey--duration js-rating" data-durationrating="<%= journey['durRating'] %>">
-        <i class="icon-time"></i>
-        <%= journey["dur"] %>
-      </div>
-      <div class="journey--changes js-rating" data-changerating="<%= journey['chgRating'] %>">
-        <i class="icon-changes"></i>
-        <%= num_of_changes_or_direct(journey["chg"]) %>
-      </div>
-      <div class="journy--fare js-rating" data-farerating="<%= journey['fareRating'] %>">
-        <%= journey["fare"] %>
+      <div class="split">
+        <div class="split__title journey--duration js-rating" data-durationrating="<%= journey['durRating'] %>">
+          <i class="icon-time"></i>
+          <%= journey["dur"] %>
+        </div>
+        <div class="split__title journey--changes js-rating" data-changerating="<%= journey['chgRating'] %>">
+          <i class="icon-changes"></i>
+          <%= num_of_changes_or_direct(journey["chg"]) %>
+        </div>
+        <div class="journey--fare js-rating" data-farerating="<%= journey['fareRating'] %>">
+          <%= journey["fare"] %>
+        </div>
       </div>
     </li>
   <% end %>
