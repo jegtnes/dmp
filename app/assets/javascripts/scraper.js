@@ -7,8 +7,9 @@ var casper = require('casper').create({
 var debug = false;
 
 if (casper.cli.args.length < 4) {
-	console.log('Please provide four parameters: Departure, arrival, date, and time');
-	casper.exit();
+	error = [{"error": "Please make sure to provide both stations as well as date and time."}];
+	casper.echo(JSON.stringify(error));
+	casper.exit()
 }
 
 else {
