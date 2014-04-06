@@ -1,8 +1,10 @@
-# A helper method to assign an appropriate rating to a certain journey based
-# on the other alternatives available.
-# Params:
-# * length: The amount of
+# Various helper methods related to journeys.
 module JourneyHelper
+  # A helper method to assign an appropriate rating to a certain journey based
+  # on the other alternatives available.
+  # Params:
+  # * length: The amount of total journeys that are going to be related
+  # * index: The current index of this journey
   def journey_rating_class(length, index)
     best_journey = (length * 0.33).round
     good_journey = best_journey + (length * 0.33).round
