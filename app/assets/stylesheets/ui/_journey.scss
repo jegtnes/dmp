@@ -1,0 +1,31 @@
+.journeys {
+  @extend %clearfix;
+  margin: 0;
+  font-family: "ratio-display", sans-serif;
+  padding: $half-spacing-unit;
+  counter-reset: li;
+  font-size: 1.25em;
+}
+
+.journey {
+  width: 33%;
+  float: left;
+  position: relative;
+  list-style: none;
+  padding-left: 4.5rem; // leave space for the before counter
+  margin-bottom: 1em;
+
+  &:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    font-size: 4rem;
+    width: 4rem;
+    margin-left: -4.5rem;
+    text-align: right;
+  }
+}
+
+  .journey--fare {
+    font-size: 2rem;
+  }
