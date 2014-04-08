@@ -5,7 +5,8 @@ class JourneyController < ApplicationController
     time = format_time(params[:time])
     dep = params[:dep]
     arr = params[:arr]
-    journey_scraper = JourneyScraper.new(dep, arr, date, time)
+    dep_arr = params[:dep_arr]
+    journey_scraper = JourneyScraper.new(dep, arr, date, time, dep_arr)
     cmd = journey_scraper.call("#{ENV['CASPER_PATH']} #{ENV['SCRAPER_PATH']}")
     @journeys = journey_scraper.parse(cmd)
     redirect_to root_url, alert: :journey_not_found if @journeys.nil?
