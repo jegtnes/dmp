@@ -6,7 +6,7 @@ var casper = require('casper').create({
 
 var debug = false;
 
-if (casper.cli.args.length < 4) {
+if (casper.cli.args.length < 5) {
 	error = [{"error": "Please make sure to provide both stations as well as date and time."}];
 	casper.echo(JSON.stringify(error));
 	casper.exit()
@@ -18,9 +18,9 @@ else {
 	url += casper.cli.raw.get(1) + '/'; //arrival
 	url += casper.cli.raw.get(2) + '/'; //date
 	url += casper.cli.raw.get(3) + '/'; //time
-	url += "dep";
+	url += casper.cli.raw.get(4) + '/'; // departure/arrival
 
-	if (casper.cli.get(4) === true) {
+	if (casper.cli.get(5) === true) {
 		debug = true;
 	}
 }
