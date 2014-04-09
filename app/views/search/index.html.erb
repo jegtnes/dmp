@@ -20,12 +20,8 @@
     </div>
 
     <div class="field">
-      <label for="time">Time:</label>
-      <%= time_field_tag :time, @currentTime, required: true, class: 'text-input text-input--narrow' %>
-    </div>
-
-    <div class="field">
       <%= select_tag :dep_arr, options_for_select([['Depart at', 'dep'], ['Arrive at', 'arr']]) %>
+      <%= time_field_tag :time, @currentTime, required: true, class: 'text-input text-input--narrow' %>
     </div>
   </fieldset>
     <%= button_tag "Search", type: :submit, class: "btn btn--beta btn--hollow btn--cta" %>
