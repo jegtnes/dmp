@@ -21,13 +21,15 @@
     padding-left: 4.5rem;
   }
 
+  // In order to style the list number, we need to manually generate it ourselves.
   &:before {
-    content: counter(li);
+    content: counter(li) ".";
     counter-increment: li;
     position: absolute;
     font-size: 2rem;
     width: 2rem;
     margin-left: -2.5rem;
+    margin-top: 1.35rem;
     text-align: right;
 
     @include mq(24em) {
@@ -39,5 +41,9 @@
 }
 
   .journey--fare {
+    position: absolute;
+    top: 1.55rem;
+    right: 0;
     font-size: 2rem;
+    text-align: right;
   }
