@@ -4,6 +4,7 @@
   font-family: "ratio-display", sans-serif;
   counter-reset: li;
   font-size: 1.25em;
+  clear: both;
 }
 
 .journey {
@@ -63,11 +64,21 @@
     text-align: right;
   }
 
+.journeysort-header {
+  float: left;
+}
+
 .journeysort {
+  margin: 2px 0 16px;
   list-style: none;
+  float: left;
 
   > li {
     margin: 0 1rem;
     display: inline-block;
+
+    &.active {
+      font-weight: 700;
+    }
   }
 }
