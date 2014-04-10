@@ -55,6 +55,11 @@
     position: relative;
   }
 
+  .field--depart {
+    // replacing the label with a select box has wreaked havoc on the vertical rhythm
+    margin-top: 1rem;
+  }
+
   @include mq(35em) {
     .field {
       width: 50%;
