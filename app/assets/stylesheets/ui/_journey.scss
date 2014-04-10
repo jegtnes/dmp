@@ -27,12 +27,12 @@
 
   @include mq(46.875em) {
     width: 50%;
-    margin: 1rem 2.5rem;
+    max-width: 19rem;
     padding-left: 4.5rem;
   }
 
   @include mq(60em) {
-    margin: 1rem 4.75rem;
+    margin: 1rem 3.75rem;
   }
 
   // In order to style the list number, we need to manually generate it ourselves.
