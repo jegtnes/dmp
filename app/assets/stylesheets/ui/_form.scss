@@ -26,7 +26,7 @@
     padding-top: 0;
 
     @include mq(24em) {
-      width: 60%;
+      width: 65%;
     }
   }
 
@@ -38,15 +38,18 @@
       text-align: right;
     }
   }
+}
 
-  fieldset {
-    border: 0;
-    padding: 0;
-    margin: 0;
-  }
+.search-stations,
+.search-time {
+  width: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .search-time {
+
   .field {
     margin-bottom: .5rem;
     position: relative;
@@ -63,11 +66,13 @@
     }
 
     label {
-      width: 5rem;
+      width: 6.25rem;
     }
   }
 
   @include mq(46.875em) {
+    text-align: left;
+    width: 37.5%; /* 5/12 */
     .field {
       width: 100%;
       float: none;
@@ -79,23 +84,13 @@
   }
 }
 
-.search-stations,
-.search-time {
-  width: 100%;
-}
-
-@include mq(46.875em) {
-  .search-stations {
+.search-stations {
+  @include mq(46.875em) {
     text-align: right;
-    width: 62.5%; /* 7/12 */
-  }
-
-  .search-time {
-    text-align: left;
-    width: 37.5%; /* 5/12 */
+    margin-right: 2%;
+    width: 60.5%; /* 7/12 */
   }
 }
-
 .picker {
   text-shadow: none;
 }

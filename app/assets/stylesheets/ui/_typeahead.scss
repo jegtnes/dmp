@@ -9,6 +9,10 @@
       width: 100%;
     }
   }
+
+  @include mq(35em) {
+    width: 75%;
+  }
 }
 
 .tt-hint {
