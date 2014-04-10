@@ -62,3 +62,12 @@
     font-size: 2rem;
     text-align: right;
   }
+
+.journeysort {
+  list-style: none;
+
+  > li {
+    margin: 0 1rem;
+    display: inline-block;
+  }
+}

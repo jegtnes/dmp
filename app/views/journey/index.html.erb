@@ -6,10 +6,18 @@
     <a href="/" class>(edit)</a>
   </h2>
 
-  <ol class="journeys">
+  <h3>Sort by</h3>
+  <ul id="sort" class="journeysort">
+    <li class="js-sort-total">Pleasantness</li>
+    <li class="js-sort-fare">Price</li>
+    <li class="js-sort-duration">Duration</li>
+    <li class="js-sort-changes">Changes</li>
+  </ul>
+
+  <ol class="journeys" id="journeys">
   <% @journeys.each_with_index do |journey, index| %>
     <li class="journey <%= journey_rating_class(@journeys.length, index) %>"
-      data-totalRating="<%= journey["rtg"] %>"
+      data-totalrating="<%= journey["rtg"] %>"
       data-durationrating="<%= journey['durRating'] %>"
       data-changerating="<%= journey['chgRating'] %>"
       data-farerating="<%= journey['fareRating'] %>">

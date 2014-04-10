@@ -18,5 +18,5 @@
 //= require picker
 //= require picker.date
 //= require picker.time
-//= require stupidtable.min
+//= require jquery.tinysort.min
 //= require_tree .
