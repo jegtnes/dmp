@@ -2,9 +2,6 @@
   @extend %clearfix;
   margin: 0;
   font-family: "ratio-display", sans-serif;
-  @include mq(35em) {
-    padding: $half-spacing-unit;
-  }
   counter-reset: li;
   font-size: 1.25em;
 }
@@ -20,13 +17,22 @@
   margin-bottom: 1em;
 
   @include mq(35em) {
-    width: 50%;
-    padding-left: 4.5rem;
-    max-width: 20rem;
+    width: 48%;
+    margin: 1rem .25rem;
+  }
+
+  @include mq(39rem) {
+    margin: 1rem;
   }
 
   @include mq(46.875em) {
+    width: 50%;
     margin: 1rem 2.5rem;
+    padding-left: 4.5rem;
+  }
+
+  @include mq(60em) {
+    margin: 1rem 4.75rem;
   }
 
   // In order to style the list number, we need to manually generate it ourselves.
@@ -40,7 +46,7 @@
     margin-top: 1.35rem;
     text-align: right;
 
-    @include mq(35em) {
+    @include mq(46.875em) {
       font-size: 4rem;
       width: 4rem;
       margin-left: -4.5rem;
