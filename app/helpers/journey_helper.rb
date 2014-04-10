@@ -20,8 +20,10 @@ module JourneyHelper
   end
 
   def num_of_changes_or_direct(changes)
-    if changes.to_i >= 1
+    if changes.to_i >= 2
       "#{changes} changes"
+    elsif changes.to_i == 1
+      "#{changes} change"
     else
       'Direct'
     end
