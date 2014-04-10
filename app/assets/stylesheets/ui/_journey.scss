@@ -2,13 +2,16 @@
   @extend %clearfix;
   margin: 0;
   font-family: "ratio-display", sans-serif;
-  padding: $half-spacing-unit;
+  @include mq(35em) {
+    padding: $half-spacing-unit;
+  }
   counter-reset: li;
   font-size: 1.25em;
 }
 
 .journey {
   width: 100%;
+  max-width: 16rem;
 
   float: left;
   position: relative;
@@ -16,9 +19,14 @@
   padding-left: 2.5rem; // leave space for the before counter
   margin-bottom: 1em;
 
-  @include mq(24em) {
+  @include mq(35em) {
     width: 50%;
     padding-left: 4.5rem;
+    max-width: 20rem;
+  }
+
+  @include mq(46.875em) {
+    margin: 1rem 2.5rem;
   }
 
   // In order to style the list number, we need to manually generate it ourselves.
@@ -32,17 +40,18 @@
     margin-top: 1.35rem;
     text-align: right;
 
-    @include mq(24em) {
+    @include mq(35em) {
       font-size: 4rem;
       width: 4rem;
       margin-left: -4.5rem;
+      margin-top: 0;
     }
   }
 }
 
   .journey--fare {
     position: absolute;
-    top: 1.55rem;
+    top: 1.35rem;
     right: 0;
     font-size: 2rem;
     text-align: right;
